@@ -21,10 +21,10 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - Smart Textile Technology" 
-        description="WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring."
+        title="Social Dots - Digital Marketing Agency Canada" 
+        description="Social Dots: Leading digital marketing agency helping Canadian small to medium businesses grow with web development, AI solutions, and marketing automation."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics', 'manufacturing']}
+        keywords={['digital marketing canada', 'web development', 'AI solutions', 'marketing automation', 'landing pages', 'small business', 'lead generation']}
       />
       <Hero />
       <Features />
