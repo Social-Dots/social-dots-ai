@@ -3,7 +3,6 @@ import { motion, useInView } from "framer-motion";
 import { Layers, BarChart, AlertTriangle, Clock4, Rocket, Zap, Sparkles, ArrowRight, Award, Target, Shield, ChartBar } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Link } from "react-router-dom";
-
 const AnimatedCounter = ({
   end,
   duration = 2000,
@@ -50,7 +49,6 @@ const AnimatedCounter = ({
       {prefix}{count.toFixed(decimals)}{suffix}
     </span>;
 };
-
 const WhyWrlds = () => {
   const isMobile = useIsMobile();
   const containerVariants = {
@@ -85,9 +83,7 @@ const WhyWrlds = () => {
         once: true,
         margin: "-100px"
       }} variants={containerVariants}>
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-            Why WRLDS?
-          </motion.h2>
+          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">Why Social Dots?</motion.h2>
           <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
             In an industry where complexity leads to failure, we bring simplicity and expertise to ensure your success
           </motion.p>
@@ -133,9 +129,9 @@ const WhyWrlds = () => {
         </motion.div>
         
         <motion.div className="mb-12" initial="hidden" whileInView="visible" viewport={{
-          once: true,
-          margin: "-100px"
-        }} variants={containerVariants}>
+        once: true,
+        margin: "-100px"
+      }} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
               What WRLDS Does for You
@@ -196,11 +192,7 @@ const WhyWrlds = () => {
           </motion.div>
           
           <motion.div variants={itemVariants} className="text-center mt-10">
-            <Link 
-              to="/development-process" 
-              onClick={() => window.scrollTo(0, 0)}
-              className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group"
-            >
+            <Link to="/development-process" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group">
               Learn more about our structured development process
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -209,5 +201,4 @@ const WhyWrlds = () => {
       </div>
     </section>;
 };
-
 export default WhyWrlds;
