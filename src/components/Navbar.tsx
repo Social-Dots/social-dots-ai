@@ -97,6 +97,18 @@ const Navbar = () => {
                         </RouterLink>
                       </li>
                       <li>
+                        <RouterLink to="/services/ai-inbound-assistant" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">AI Inbound Lead Assistant</div>
+                          <p className="text-sm text-gray-500">24/7 lead capture and qualification</p>
+                        </RouterLink>
+                      </li>
+                      <li>
+                        <RouterLink to="/services/ai-outbound-agent" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">AI Outbound Sales Agent</div>
+                          <p className="text-sm text-gray-500">Personalized outreach at scale</p>
+                        </RouterLink>
+                      </li>
+                      <li>
                         <RouterLink to="/services/web-development" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Web Development</div>
                           <p className="text-sm text-gray-500">Professional landing pages from $299</p>
