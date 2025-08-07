@@ -85,6 +85,12 @@ const Navbar = () => {
                         </RouterLink>
                       </li>
                       <li>
+                        <RouterLink to="/services/ai-business-assistant" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">AI Business Assistant</div>
+                          <p className="text-sm text-gray-500">Automate tasks, reports, and workflows</p>
+                        </RouterLink>
+                      </li>
+                      <li>
                         <RouterLink to="/services/web-development" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Web Development</div>
                           <p className="text-sm text-gray-500">Professional landing pages from $299</p>
