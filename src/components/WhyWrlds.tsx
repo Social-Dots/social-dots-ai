@@ -93,37 +93,37 @@ const WhyWrlds = () => {
         once: true,
         margin: "-100px"
       }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <BarChart className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 text-center hover:from-primary/10 hover:to-primary/15 transition-all">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <Award className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={3.8} decimals={1} suffix=" Billion" /> USD
+              <AnimatedCounter end={15} suffix="+" /> Years
             </h3>
-            <p className="text-gray-700">Market estimated to reach this value by 2030, with massive growth potential for smart textile solutions</p>
+            <p className="text-gray-700">of experience from top Canadian tech companies brought to small business solutions</p>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <AlertTriangle className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-secondary/5 to-secondary/10 p-6 rounded-xl border border-secondary/20 text-center hover:from-secondary/10 hover:to-secondary/15 transition-all">
+            <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+              <Target className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={60} suffix="%" /> 
+              $<AnimatedCounter end={299} />
             </h3>
             <p className="text-gray-700">
-              of IoT projects stall at the proof-of-concept stage due to fragmented expertise and poor coordination
+              Starting price for professional landing pages - flat rates, no hidden fees, fast delivery
             </p>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <Clock4 className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-accent/5 to-accent/10 p-6 rounded-xl border border-accent/20 text-center hover:from-accent/10 hover:to-accent/15 transition-all">
+            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+              <Shield className="w-8 h-8 text-accent" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={80} suffix="%" />
+              <AnimatedCounter end={100} suffix="%" />
             </h3>
             <p className="text-gray-700">
-              Increase in time-to-market for IoT products over the past four years, creating costly delays
+              Commitment to ethical outsourcing and cross-border collaboration that creates real economic impact
             </p>
           </motion.div>
         </motion.div>
@@ -134,58 +134,58 @@ const WhyWrlds = () => {
       }} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              What WRLDS Does for You
+              What Social Dots Does for You
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We transform your ideas into market-ready solutions with tangible benefits for your business
+              We combine Canadian expertise with global talent and AI tools to deliver results that matter
             </p>
           </motion.div>
           
           <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <BarChart className="w-6 h-6 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <Award className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">New Revenue Products</h4>
-                  <p className="text-gray-700">Create high-margin, sensor-enabled products for new revenue streams.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Built for Small Business, Backed by Big Experience</h4>
+                  <p className="text-gray-700">15+ years of experience from top Canadian tech companies brought to small business solutions that actually work.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-secondary/5 to-secondary/10 p-6 rounded-xl border border-secondary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Sparkles className="w-6 h-6 text-gray-700" />
+                <div className="bg-secondary/10 rounded-full p-3 mr-4">
+                  <Sparkles className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Innovation That Attracts</h4>
-                  <p className="text-gray-700">Break through to dream clients with tech that makes you stand out.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Human-AI Hybrid Workflow</h4>
+                  <p className="text-gray-700">Our Canadian strategy team works with skilled talent in Pakistan, leveraging AI tools like ChatGPT, Claude, and HeyGen.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-accent/5 to-accent/10 p-6 rounded-xl border border-accent/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Zap className="w-6 h-6 text-gray-700" />
+                <div className="bg-accent/10 rounded-full p-3 mr-4">
+                  <Zap className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Comfort-Zone Development</h4>
-                  <p className="text-gray-700">We develop frontier tech while you stay in your comfort zone.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Flat Rates. No BS. Fast Delivery.</h4>
+                  <p className="text-gray-700">No vague pricing or bloated timelines. We ship fast, keep it lean, and deliver high quality that performs.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Rocket className="w-6 h-6 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <Shield className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Brand-Building Leaps</h4>
-                  <p className="text-gray-700">We enable hardware/software leaps that define your brand's future.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">More Than Just Business</h4>
+                  <p className="text-gray-700">Creating opportunities for Canadian businesses to grow smarter and skilled professionals in Pakistan to work on global projects.</p>
                 </div>
               </div>
             </motion.div>
