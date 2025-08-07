@@ -85,7 +85,7 @@ const WhyWrlds = () => {
       }} variants={containerVariants}>
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">Why Social Dots?</motion.h2>
           <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
-            In an industry where complexity leads to failure, we bring simplicity and expertise to ensure your success
+            We combine Canadian expertise with global talent and AI tools to deliver results that matter for your business
           </motion.p>
         </motion.div>
         
@@ -132,14 +132,6 @@ const WhyWrlds = () => {
         once: true,
         margin: "-100px"
       }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              What Social Dots Does for You
-            </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We combine Canadian expertise with global talent and AI tools to deliver results that matter
-            </p>
-          </motion.div>
           
           <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
