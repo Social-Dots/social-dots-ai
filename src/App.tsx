@@ -22,6 +22,7 @@ import AIBusinessAssistant from "./pages/AIBusinessAssistant";
 import VideoAvatars from "./pages/VideoAvatars";
 import AIInboundLeadAssistant from "./pages/AIInboundLeadAssistant";
 import AIOutboundSalesAgent from "./pages/AIOutboundSalesAgent";
+import WebServices from "./pages/WebServices";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 
@@ -48,6 +49,7 @@ const App = () => {
             <Route path="/services/video-avatars" element={<VideoAvatars />} />
             <Route path="/services/ai-inbound-assistant" element={<AIInboundLeadAssistant />} />
             <Route path="/services/ai-outbound-agent" element={<AIOutboundSalesAgent />} />
+            <Route path="/services/web-services" element={<WebServices />} />
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
