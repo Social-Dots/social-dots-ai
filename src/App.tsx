@@ -19,6 +19,7 @@ import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AIConcierge from "./pages/AIConcierge";
 import AIBusinessAssistant from "./pages/AIBusinessAssistant";
+import VideoAvatars from "./pages/VideoAvatars";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/development-process" element={<DevelopmentProcess />} />
             <Route path="/services/ai-concierge" element={<AIConcierge />} />
             <Route path="/services/ai-business-assistant" element={<AIBusinessAssistant />} />
+            <Route path="/services/video-avatars" element={<VideoAvatars />} />
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

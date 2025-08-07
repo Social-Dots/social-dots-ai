@@ -91,6 +91,12 @@ const Navbar = () => {
                         </RouterLink>
                       </li>
                       <li>
+                        <RouterLink to="/services/video-avatars" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Video Avatars</div>
+                          <p className="text-sm text-gray-500">AI-generated avatars for scalable content</p>
+                        </RouterLink>
+                      </li>
+                      <li>
                         <RouterLink to="/services/web-development" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Web Development</div>
                           <p className="text-sm text-gray-500">Professional landing pages from $299</p>
