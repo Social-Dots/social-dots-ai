@@ -8,52 +8,52 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "6th SENSE Safety System",
-    brand: "FireCat Group",
-    description: "AI-driven sensor solution integrated into uniforms for law enforcement, military and firefighters, providing real-time vital monitoring and situational awareness in high-risk environments.",
-    tags: ["Safety", "Military", "AI Sensors", "Real-time Monitoring"],
-    imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
+    title: "AI Customer Service Automation",
+    brand: "Local Restaurant Chain",
+    description: "Implemented AI chatbots and automated customer service system that handles 80% of customer inquiries, reducing call center costs by 60% while improving response times.",
+    tags: ["AI Automation", "Customer Service", "Cost Reduction", "24/7 Support"],
+    imageUrl: "/ai-call-center-automation.jpg",
     isFeatured: true,
-    link: "/projects/firecat",
+    link: "/portfolio/ai-customer-service",
     details: `
-      FireCat Group aimed to enhance safety in high-risk environments. WRLDS Technologies provided the 6th SENSE solution with secure real-time data transmission, high-quality sensors resistant to extreme conditions, integrated AI-powered clothing, and a centralized control unit. Features include Man Down Alarm, GPS positioning, vital sign monitoring, and Panic Button. Benefits: life-saving technology, machine learning preventing false alarms, durable hardware with 7-10 year lifespan, washable sensors, and Plug & Play installation with 12-20 hours of operation per charge.
+      A growing Canadian restaurant chain needed to scale their customer service without increasing staff costs. Social Dots implemented an AI-powered customer service system with intelligent chatbots, automated order tracking, and smart routing for complex queries. Results: 60% reduction in call center costs, 24/7 availability, 80% query resolution rate, and improved customer satisfaction scores.
     `
   },
   {
     id: 2,
-    title: "Performance Athletic Footwear",
-    brand: "Global Sports Retail Leader",
-    description: "Smart Footwear R&D aiming to revolutionize development, fitting, and testing of athletic footwear.",
-    tags: ["Sports", "R&D", "Footwear", "Athletic Performance"],
-    imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
-    link: "/projects/sport-retail"
+    title: "E-commerce Growth Platform",
+    brand: "Local Retail Business",
+    description: "Complete digital transformation including custom website, inventory management, and automated marketing that increased online sales by 300%.",
+    tags: ["E-commerce", "Digital Transformation", "Marketing Automation", "Sales Growth"],
+    imageUrl: "/web-development-ai.jpg",
+    link: "/portfolio/ecommerce-growth"
   },
   {
     id: 3,
-    title: "Workwear Climate Control",
-    brand: "European Multinational Textile Producer",
-    description: "Fully integrated temperature controls for professionals working in extreme heat and cold. Modular approach to enable full-body systems.",
-    tags: ["Climate Control", "Workwear", "Temperature Regulation", "Extreme Conditions"],
-    imageUrl: "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
-    link: "/projects/workwear"
+    title: "Social Media AI Management",
+    brand: "Canadian Marketing Agency",
+    description: "AI-powered content creation and scheduling system that manages social media across 50+ client accounts with automated engagement and analytics.",
+    tags: ["Social Media", "AI Content", "Automation", "Client Management"],
+    imageUrl: "/social-media-ai.jpg",
+    link: "/portfolio/social-media-automation"
   },
   {
     id: 4,
-    title: "Ice Hockey Elite Skill Tracker",
-    brand: "Mars Blades",
-    description: "R&D product evaluating data from single IMU embedded in the hockey shoe. Aim: establish motion patterns that lead to ultimate acceleration, speed, and maneuverability.",
-    tags: ["Ice Hockey", "Motion Analysis", "Performance Tracking", "Sports"],
-    imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
-    link: "/projects/hockey"
+    title: "Lead Generation System",
+    brand: "Professional Services Firm",
+    description: "Custom CRM integration with automated lead scoring, email sequences, and conversion tracking that doubled qualified leads in 3 months.",
+    tags: ["Lead Generation", "CRM Integration", "Email Automation", "Conversion Tracking"],
+    imageUrl: "/digital-marketing-ai.jpg",
+    link: "/portfolio/lead-generation"
   },
   {
     id: 5,
-    title: "Dog Activity Counter",
-    brand: "UK Insurance Giant",
-    description: "R&D project embedding a step counter in a dog collar. Measures daily activity and sends real-time data to the cloud for veterinary consultancies.",
-    tags: ["Pet Technology", "Insurance", "Activity Tracking", "R&D"],
-    imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
-    link: "/projects/pet-tracker"
+    title: "Business Process Automation",
+    brand: "Growing Tech Startup",
+    description: "Comprehensive workflow automation including document processing, client onboarding, and reporting that saved 20 hours per week of manual work.",
+    tags: ["Process Automation", "Workflow Optimization", "Document Processing", "Time Savings"],
+    imageUrl: "/business-automation-ai.jpg",
+    link: "/portfolio/process-automation"
   }
 ];
 
@@ -129,14 +129,14 @@ const Projects = () => {
   return <section id="projects" ref={projectsRef} className="bg-white py-[50px] w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className={`text-center mb-10 max-w-3xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">
-            Customer Cases
+          <div className="inline-block mb-2 px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
+            Client Success Stories
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            From Textile to Intelligence
+            Digital Solutions That Drive Growth
           </h2>
           <p className="text-gray-600">
-            Explore how our textile sensor technology is revolutionizing multiple industries with intelligent fabric solutions tailored to specific needs.
+            See how Social Dots helps Canadian businesses transform with AI-powered solutions, from automated customer service to complete digital marketing systems.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">

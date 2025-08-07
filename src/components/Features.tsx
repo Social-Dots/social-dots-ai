@@ -26,25 +26,25 @@ const Features = () => {
       icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Web Development",
       description: "Professional landing pages from $299 to complete marketing websites that convert visitors into customers.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
+      image: "/web-development-ai.jpg"
     },
     {
       icon: <Code className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "AI Solutions",
       description: "Custom AI tools and automation that streamline your business operations and improve efficiency.",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
+      image: "/ai-call-center-automation.jpg"
     },
     {
       icon: <BarChart3 className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Digital Marketing",
       description: "Complete marketing systems trusted by 10+ Canadian businesses for lead generation and growth.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
+      image: "/digital-marketing-ai.jpg"
     },
     {
       icon: <Smartphone className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Social Media",
       description: "Strategic social media management and content creation that helps your brand shine on all platforms.",
-      image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
+      image: "/social-media-ai.jpg"
     }
   ];
 
@@ -109,17 +109,17 @@ const Features = () => {
   }, []);
 
   const digitalCaseStudies = [{
-    image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
+    image: "/web-development-ai.jpg",
     title: "Professional Landing Pages",
     description: "From $299 - Converting landing pages that capture leads and drive sales for Canadian businesses."
   }, {
-    image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Complete Marketing Systems",
-    description: "Full-scale digital marketing automation and CRM integration for growing businesses."
+    image: "/ai-call-center-automation.jpg",
+    title: "AI Customer Service",
+    description: "AI agents replacing traditional call center operations, providing 24/7 automated customer support."
   }, {
-    image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Social Media Management",
-    description: "Strategic content creation and social media management that helps brands shine across all platforms."
+    image: "/business-automation-ai.jpg",
+    title: "Business Process Automation",
+    description: "Smart workflows and AI-powered automation that streamline operations for small to medium businesses."
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
