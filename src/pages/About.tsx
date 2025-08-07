@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              About Social Dots
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-gray-600 mb-12"
               >
-                We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
+                Founded in Toronto, Social Dots Inc. brings together strategic thinking, cutting-edge technology, and deep Canadian market expertise to help businesses navigate and excel in the digital landscape.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -51,12 +51,12 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                    At Social Dots, we combine strategic thinking with technical expertise to deliver exceptional 
+                    results for our clients across Canada.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                    We bring 15+ years of experience from top Canadian tech companies into every project, whether 
+                    it's Salesforce automation or lead-generating websites.
                   </p>
                 </motion.div>
                 
@@ -70,19 +70,19 @@ const About = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Innovation:</strong> We push boundaries to create solutions that weren't possible before.</span>
+                      <span><strong>Human-AI Hybrid Workflow:</strong> We blend our Canadian strategy team with skilled talent and AI tools for smart, affordable solutions.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Quality:</strong> We're committed to excellence in every sensor, algorithm, and solution we deliver.</span>
+                      <span><strong>Flat Rates. No BS. Fast Delivery:</strong> We ship fast, keep it lean, and deliver high quality that performs.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Collaboration:</strong> We work closely with our clients to ensure their unique needs are met.</span>
+                      <span><strong>Big Experience for Small Business:</strong> Bringing 15+ years of top-tier Canadian tech expertise to small businesses.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Impact:</strong> We measure success by the tangible differences our technology makes in the real world.</span>
+                      <span><strong>Cross-Border Impact:</strong> Creating opportunities for Canadian businesses and skilled professionals globally.</span>
                     </li>
                   </ul>
                 </motion.div>
@@ -94,22 +94,22 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+                <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                    Social Dots was born to create opportunities — for Canadian businesses to grow smarter, and for 
+                    skilled professionals in Pakistan to work on global projects. When you work with us, you support 
+                    cross-border collaboration, ethical outsourcing, and real economic impact.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                    Most agencies either go full manual or hand everything over to AI. We blend both — our Canadian 
+                    strategy team works with skilled talent in Pakistan and leverages AI tools like ChatGPT, Claude, 
+                    and HeyGen to deliver smart, affordable, and scalable digital services.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                    Our diverse team combines deep Canadian market knowledge with international expertise and 
+                    cutting-edge technical skills to deliver exceptional results with over 100 successful 
+                    implementations across Canada.
                   </p>
                 </div>
               </motion.div>
@@ -120,37 +120,19 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Team</h2>
+                <h2 className="text-3xl font-bold mb-6">Meet Our CEO</h2>
                 <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in textile engineering, electronics, software development, 
-                  artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
+                  Our diverse team combines deep Canadian market knowledge with international expertise and 
+                  cutting-edge technical skills.
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 max-w-md mx-auto">
                   {[
                     {
-                      name: "Felix von Heland",
-                      role: "CEO and Founder",
-                      bio: "Leading WRLDS Technologies with a vision to transform the future of smart textiles.",
-                      image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
-                    },
-                    {
-                      name: "Niek Bijman",
-                      role: "Software Lead",
-                      bio: "Specializing in cloud infrastructure and APIs for seamless data integration.",
-                      image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
-                    },
-                    {
-                      name: "Chengjie Li",
-                      role: "Hardware Lead",
-                      bio: "Expert in embedded systems engineering, leading our hardware development efforts.",
-                      image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
-                    },
-                    {
-                      name: "Love",
-                      role: "COO",
-                      bio: "Overseeing daily operations and ensuring business objectives are met effectively.",
-                      image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                      name: "Ali Shafique",
+                      role: "Founder & CEO",
+                      bio: "15+ years of Canadian IT industry experience with deep Salesforce ecosystem expertise. AI Strategy & Marketing Coach and spiritual guide for purpose-driven entrepreneurs. Integrates strategic clarity with learning design, having worked with business and technical teams across top Canadian and US companies.",
+                      image: "https://media.licdn.com/dms/image/v2/D5603AQFnKUOtxRp7BA/profile-displayphoto-shrink_800_800/B56Zb2LMVYGgAc-/0/1747886851794?e=1757548800&v=beta&t=tEcmZQhzJVamv9zVnUFOgh0h5eLkSDvrR2oK7JSJVpU"
                     }
                   ].map((member, i) => (
                     <Card key={i} className="bg-gray-50 border border-gray-100 overflow-hidden">
