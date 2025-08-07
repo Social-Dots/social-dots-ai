@@ -63,12 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				wrlds: {
-					teal: '#9F9EA1',
-					dark: '#3F3F3F',
-					light: '#F6F6F7',
-					accent: '#C8C8C9',
-					muted: '#F1F1F1'
+				'social-dots': {
+					blue: 'hsl(var(--dots-blue))',
+					orange: 'hsl(var(--dots-orange))',
+					'blue-light': 'hsl(var(--dots-blue-light))',
+					'orange-light': 'hsl(var(--dots-orange-light))',
 				}
 			},
 			borderRadius: {
@@ -115,6 +114,29 @@ export default {
 				'shimmer': {
 					'0%': { backgroundPosition: '-200% 0' },
 					'100%': { backgroundPosition: '200% 0' }
+				},
+				'dot-bounce': {
+					'0%, 100%': { transform: 'translateY(0) scale(1)', opacity: '0.7' },
+					'50%': { transform: 'translateY(-8px) scale(1.1)', opacity: '1' }
+				},
+				'dot-wave': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'25%': { transform: 'translateY(-4px)' },
+					'75%': { transform: 'translateY(4px)' }
+				},
+				'dot-pulse': {
+					'0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+					'50%': { transform: 'scale(1.2)', opacity: '1' }
+				},
+				'dot-float': {
+					'0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+					'33%': { transform: 'translateY(-6px) rotate(120deg)' },
+					'66%': { transform: 'translateY(6px) rotate(240deg)' }
+				},
+				'social-flow': {
+					'0%': { transform: 'translateX(-100%) rotate(0deg)', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'translateX(100%) rotate(360deg)', opacity: '0' }
 				}
 			},
 			animation: {
@@ -126,7 +148,12 @@ export default {
 				'scale-in-out': 'scale-in-out 3s ease-in-out infinite',
 				'rotate-slow': 'rotate-slow 20s linear infinite',
 				'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
-				'shimmer': 'shimmer 3s linear infinite'
+				'shimmer': 'shimmer 3s linear infinite',
+				'dot-bounce': 'dot-bounce 2s ease-in-out infinite',
+				'dot-wave': 'dot-wave 3s ease-in-out infinite',
+				'dot-pulse': 'dot-pulse 2.5s ease-in-out infinite',
+				'dot-float': 'dot-float 4s ease-in-out infinite',
+				'social-flow': 'social-flow 8s linear infinite'
 			}
 		}
 	},

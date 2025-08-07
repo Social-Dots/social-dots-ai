@@ -5,6 +5,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link as RouterLink } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import SocialDotsLogo from '@/components/SocialDotsLogo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +49,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center">
-              <span className={cn("text-xl font-bold", isScrolled ? "text-blue-600" : "text-white")}>Social Dots</span>
+              <SocialDotsLogo 
+                showText={true}
+                animated={false}
+                className={cn(isScrolled ? "" : "text-white [&_span]:text-white")}
+              />
             </RouterLink>
           </div>
           
@@ -161,7 +166,7 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-orange-500 text-white hover:bg-orange-600" : "bg-orange-500 text-white hover:bg-orange-600")}>
+                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-social-dots-orange text-white hover:bg-social-dots-orange/90" : "bg-social-dots-orange text-white hover:bg-social-dots-orange/90")}>
                     Get Started
                   </button>
                 </NavigationMenuItem>
@@ -225,7 +230,7 @@ const Navbar = () => {
             Careers
           </RouterLink>
           
-          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-white bg-orange-500 hover:bg-orange-600" : "text-white bg-orange-500 hover:bg-orange-600")}>
+          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-white bg-social-dots-orange hover:bg-social-dots-orange/90" : "text-white bg-social-dots-orange hover:bg-social-dots-orange/90")}>
             Get Started
           </button>
         </div>

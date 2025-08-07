@@ -8,32 +8,43 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 220 60% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 220 60% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 220 60% 20%;
 
-    --primary: 0 0% 10%;
+    /* Social Dots Brand Colors */
+    --primary: 220 80% 45%; /* Rich Blue */
     --primary-foreground: 0 0% 98%;
+    --primary-light: 220 70% 60%;
+    --primary-dark: 220 90% 35%;
 
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 25 95% 55%; /* Orange */
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 25 85% 65%;
+    --secondary-dark: 25 100% 45%;
 
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 220 30% 40%;
 
-    --accent: 0 0% 95%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 220 20% 95%;
+    --accent-foreground: 220 60% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 50%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 80% 45%;
+
+    /* Social Dots specific colors */
+    --dots-blue: 220 80% 45%;
+    --dots-orange: 25 95% 55%;
+    --dots-blue-light: 220 70% 60%;
+    --dots-orange-light: 25 85% 65%;
 
     --radius: 0.5rem;
   }
@@ -276,4 +287,98 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Social Dots animations */
+@keyframes dot-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-6px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(6px) rotate(240deg);
+  }
+}
+
+@keyframes social-flow {
+  0% {
+    transform: translateX(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-dot-bounce {
+  animation: dot-bounce 2s ease-in-out infinite;
+}
+
+.animate-dot-wave {
+  animation: dot-wave 3s ease-in-out infinite;
+}
+
+.animate-dot-pulse {
+  animation: dot-pulse 2.5s ease-in-out infinite;
+}
+
+.animate-dot-float {
+  animation: dot-float 4s ease-in-out infinite;
+}
+
+.animate-social-flow {
+  animation: social-flow 8s linear infinite;
+}
+
+/* Dot pattern styles */
+.dots-pattern {
+  background-image: radial-gradient(circle, hsl(var(--dots-orange)) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.dots-pattern-blue {
+  background-image: radial-gradient(circle, hsl(var(--dots-blue)) 1px, transparent 1px);
+  background-size: 15px 15px;
+  opacity: 0.2;
 }
