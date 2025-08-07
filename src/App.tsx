@@ -12,6 +12,7 @@ import SportRetailProject from "./pages/SportRetailProject";
 import WorkwearProject from "./pages/WorkwearProject";
 import HockeyProject from "./pages/HockeyProject";
 import PetProject from "./pages/PetProject";
+import AICustomerService from "./pages/portfolio/AICustomerService";
 import TechDetails from "./pages/TechDetails";
 import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
@@ -23,6 +24,7 @@ import VideoAvatars from "./pages/VideoAvatars";
 import AIInboundLeadAssistant from "./pages/AIInboundLeadAssistant";
 import AIOutboundSalesAgent from "./pages/AIOutboundSalesAgent";
 import WebServices from "./pages/WebServices";
+import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 
@@ -42,6 +44,7 @@ const App = () => {
             <Route path="/projects/workwear" element={<WorkwearProject />} />
             <Route path="/projects/hockey" element={<HockeyProject />} />
             <Route path="/projects/pet-tracker" element={<PetProject />} />
+            <Route path="/portfolio/ai-customer-service" element={<AICustomerService />} />
             <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/development-process" element={<DevelopmentProcess />} />
             <Route path="/services/ai-concierge" element={<AIConcierge />} />
@@ -50,6 +53,7 @@ const App = () => {
             <Route path="/services/ai-inbound-assistant" element={<AIInboundLeadAssistant />} />
             <Route path="/services/ai-outbound-agent" element={<AIOutboundSalesAgent />} />
             <Route path="/services/web-services" element={<WebServices />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
