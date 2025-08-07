@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Globe, Smartphone, BarChart3, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
+import { Globe, Smartphone, BarChart3, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Bot } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -122,17 +122,17 @@ const Features = () => {
     description: "Smart workflows and AI-powered automation that streamline operations for small to medium businesses."
   }];
   const stepFlowItems = [{
-    icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+    icon: <Bot className="h-10 w-10 text-social-dots-blue" />,
+    title: "AI-First Architecture",
+    description: "Latest AI models and automation frameworks powering every solution"
   }, {
-    icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
-    description: "Carefully selected components that complement our technology"
+    icon: <Globe className="h-10 w-10 text-social-dots-orange" />,
+    title: "Global Development Team",
+    description: "Pakistan talent with Canadian standards, ensuring cutting-edge innovation"
   }, {
-    icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
-    description: "Expert manufacturing partners for quality and reliability"
+    icon: <Zap className="h-10 w-10 text-social-dots-blue" />,
+    title: "Rapid Deployment",
+    description: "Proven methodologies for fast, reliable AI solution implementation"
   }];
   const sprintPhases = [{
     name: "Planning",
@@ -332,13 +332,13 @@ const Features = () => {
       <section id="technology" className="bg-gray-50 py-10 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Our Approach
+            <div className="inline-block mb-2 px-3 py-1 bg-social-dots-blue/10 text-social-dots-blue rounded-full text-sm font-medium">
+              Our AI-Powered Approach
             </div>
-            <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
+            <h2 className="text-3xl font-bold mb-4">How Social Dots Technology Works</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
-              allowing us to develop completely unique solutions at high speed and lower risk.
+              Social Dots combines cutting-edge AI technology with our global development expertise, 
+              delivering intelligent automation solutions that scale with your business needs.
             </p>
           </div>
           
@@ -348,7 +348,7 @@ const Features = () => {
                   <HoverCardTrigger asChild>
                     <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-pointer">
                       <div className="flex flex-col items-center text-center">
-                        <div className="bg-gray-50 rounded-full p-4 mb-4">
+                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-full p-4 mb-4 shadow-sm">
                           {item.icon}
                         </div>
                         <h3 className="text-lg font-bold mb-2">{item.title}</h3>
@@ -360,9 +360,9 @@ const Features = () => {
                     <div className="space-y-2">
                       <h4 className="text-sm font-semibold">{item.title}</h4>
                       <p className="text-sm">{item.description}</p>
-                      {index === 0 && <p className="text-xs text-gray-500">Our proprietary technology provides the core foundation of every solution we build.</p>}
-                      {index === 1 && <p className="text-xs text-gray-500">We carefully select the best off-the-shelf components to complement our proprietary technology.</p>}
-                      {index === 2 && <p className="text-xs text-gray-500">Our network of production partners ensures quality manufacturing at scale.</p>}
+                      {index === 0 && <p className="text-xs text-gray-500">We leverage GPT-4, Claude, and custom AI models to build intelligent automation that understands your business context.</p>}
+                      {index === 1 && <p className="text-xs text-gray-500">Our Pakistan-based team stays current with global AI trends while delivering Canadian-quality standards and communication.</p>}
+                      {index === 2 && <p className="text-xs text-gray-500">Our proven deployment process ensures your AI solutions are live and delivering value within weeks, not months.</p>}
                     </div>
                   </HoverCardContent>
                 </HoverCard>)}
@@ -385,71 +385,40 @@ const Features = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-6 mb-10 shadow-md">
+            <div className="bg-gradient-to-r from-social-dots-blue/10 to-social-dots-orange/10 rounded-lg p-6 mb-10 shadow-md border border-social-dots-blue/20">
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
                   <div className="flex items-center">
-                    <h3 className="text-xl font-bold">Adaptation Project</h3>
+                    <h3 className="text-xl font-bold text-social-dots-blue">Social Dots AI Adaptation</h3>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">Iterative Development</span>
-                    <RefreshCcw className="h-5 w-5 text-gray-600 animate-rotate-slow" />
+                    <span className="text-sm text-gray-600 mr-2">Continuous Learning</span>
+                    <Bot className="h-5 w-5 text-social-dots-orange animate-pulse" />
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-4">Working iteratively with customers to tailor solutions to their needs</p>
+                <p className="text-gray-700 mb-4">
+                  Our AI solutions continuously learn and adapt to your business patterns, ensuring optimal performance 
+                  and evolving capabilities that grow with your needs.
+                </p>
                 
-                <div className="relative mb-2">
-                  <Progress value={progressValue} className="h-3 bg-gray-200" />
-                </div>
-                
-                <div className={cn("grid gap-1 mt-4", isMobile ? "grid-cols-2 gap-y-2" : "grid-cols-4")}>
-                  {sprintPhases.map((phase, index) => <div key={index} className={cn("text-center p-2 rounded transition-all", progressValue >= index / sprintPhases.length * 100 && progressValue < (index + 1) / sprintPhases.length * 100 ? "bg-blue-50 border border-blue-100" : "bg-gray-50")}>
-                      <div className="flex flex-col items-center">
-                        <div className={cn("rounded-full p-1 mb-1", progressValue >= index / sprintPhases.length * 100 ? "bg-blue-100 text-blue-700" : "bg-gray-100 text-gray-500")}>
-                          {phase.icon}
-                        </div>
-                        <span className="text-xs font-medium">{phase.name}</span>
-                      </div>
-                    </div>)}
-                </div>
-                
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-6 gap-2">
-                  <div className="flex items-center">
-                    <div className="bg-green-100 rounded-full p-1 mr-2 shrink-0">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-sm text-gray-600">Customer feedback integrated at every stage</span>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                  <div className="bg-white/50 rounded-lg p-3">
+                    <div className="text-social-dots-blue font-bold text-lg">24/7</div>
+                    <div className="text-xs text-gray-600">Continuous Learning</div>
                   </div>
-                  <div className="text-sm text-gray-500 flex items-center mt-2 sm:mt-0">
-                    <span className="mr-2">Continuous improvement</span>
-                    <div className="flex space-x-1">
-                      <span className="inline-block w-2 h-2 bg-gray-300 rounded-full animate-pulse"></span>
-                      <span className="inline-block w-2 h-2 bg-gray-400 rounded-full animate-pulse animation-delay-200"></span>
-                      <span className="inline-block w-2 h-2 bg-gray-500 rounded-full animate-pulse animation-delay-400"></span>
-                    </div>
+                  <div className="bg-white/50 rounded-lg p-3">
+                    <div className="text-social-dots-orange font-bold text-lg">AI-Powered</div>
+                    <div className="text-xs text-gray-600">Smart Optimization</div>
+                  </div>
+                  <div className="bg-white/50 rounded-lg p-3">
+                    <div className="text-social-dots-blue font-bold text-lg">Global</div>
+                    <div className="text-xs text-gray-600">Team Excellence</div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <div className="relative h-16 mb-10">
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 h-full bg-gradient-to-b from-gray-300 to-gray-400"></div>
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-full -mt-3">
-                <div className="bg-gray-400 rounded-full p-1">
-                  <ArrowRight className="w-5 h-5 text-white rotate-90" />
-                </div>
-              </div>
-              
-              <div className="md:hidden flex justify-center items-center h-full">
-                <div className="w-1/3 h-0.5 bg-gray-300"></div>
-                <div className="bg-gray-400 rounded-full p-1 mx-2">
-                  <ArrowRight className="w-5 h-5 text-white" />
-                </div>
-                <div className="w-1/3 h-0.5 bg-gray-300"></div>
-              </div>
-            </div>
-            
+                 
             <div className="bg-gradient-to-r from-gray-100 via-white to-gray-100 rounded-lg p-8 max-w-xl mx-auto text-center shadow-md hover:shadow-lg transition-all duration-300">
               <div className="relative inline-block mb-4">
                 <div className="absolute inset-0 bg-black/10 rounded-full animate-pulse-slow"></div>
@@ -457,12 +426,12 @@ const Features = () => {
                   <Rocket className="h-10 w-10 text-gray-700" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Hitting the Market</h3>
-              <p className="text-gray-700">Ready to scale, produce, and launch</p>
+              <h3 className="text-xl font-bold mb-2">Ready for Market</h3>
+              <p className="text-gray-700">Scalable AI solutions that grow with your business</p>
               <div className="flex justify-center mt-4 space-x-2">
-                <span className="inline-block w-3 h-3 rounded-full bg-gray-300 animate-pulse"></span>
-                <span className="inline-block w-3 h-3 rounded-full bg-gray-500 animate-pulse animation-delay-200"></span>
-                <span className="inline-block w-3 h-3 rounded-full bg-gray-700 animate-pulse animation-delay-400"></span>
+                <span className="inline-block w-3 h-3 rounded-full bg-social-dots-blue animate-pulse"></span>
+                <span className="inline-block w-3 h-3 rounded-full bg-social-dots-orange animate-pulse animation-delay-200"></span>
+                <span className="inline-block w-3 h-3 rounded-full bg-social-dots-blue animate-pulse animation-delay-400"></span>
               </div>
             </div>
           </div>
@@ -474,8 +443,8 @@ const Features = () => {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               
-              <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
-                Contact Our Experts
+              <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-social-dots-blue hover:bg-social-dots-blue/90 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
+                Contact Our AI Experts
                 <MessageSquare className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               </Button>
             </div>
@@ -484,4 +453,5 @@ const Features = () => {
       </section>
     </>;
 };
+
 export default Features;
