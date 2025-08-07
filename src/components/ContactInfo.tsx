@@ -36,9 +36,9 @@ const ContactInfo = () => {
                   <Linkedin className="w-5 h-5 mr-2" />
                   LinkedIn Profile
                 </a>
-                <a href="tel:+46760149508" className="flex items-center text-gray-700 hover:text-blue-600">
+                <a href="tel:+12898153123" className="flex items-center text-gray-700 hover:text-blue-600">
                   <Phone className="w-5 h-5 mr-2" />
-                  076-014 95 08
+                  +1 (289) 815-3123
                 </a>
               </div>
             </div>
