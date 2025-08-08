@@ -16,7 +16,7 @@ const ContactInfo = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto mb-8">
-            Experience our AI solutions firsthand. Talk to our AI agent or schedule a call with our team to discover how we can help automate and grow your business.
+            Ready to transform your business with AI? Talk to our AI agent for instant support or book an appointment with our team for personalized assistance.
           </p>
           
           {/* Primary CTAs */}
@@ -28,7 +28,10 @@ const ContactInfo = () => {
               <MessageSquare className="mr-2 h-5 w-5" />
               Talk to AI Agent
             </button>
-            <CalendarButton className="px-8 py-4 rounded-xl text-lg font-semibold" />
+            <CalendarButton 
+              label="Book an Appointment" 
+              className="px-8 py-4 rounded-xl text-lg font-semibold" 
+            />
           </div>
         </div>
 

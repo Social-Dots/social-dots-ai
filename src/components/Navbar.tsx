@@ -159,7 +159,7 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-social-dots-orange text-white hover:bg-social-dots-orange/90" : "bg-social-dots-orange text-white hover:bg-social-dots-orange/90")}>
-                    Get Started
+                    Talk to AI Agent
                   </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -223,7 +223,7 @@ const Navbar = () => {
           </RouterLink>
           
           <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-white bg-social-dots-orange hover:bg-social-dots-orange/90" : "text-white bg-social-dots-orange hover:bg-social-dots-orange/90")}>
-            Get Started
+            Talk to AI Agent
           </button>
         </div>
       </div>
