@@ -6,13 +6,18 @@ import { User, Session } from '@supabase/supabase-js';
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
 const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-// Validate environment variables
-if (!supabaseUrl || !supabaseKey) {
-  console.error('Supabase configuration missing. Please ensure your Supabase integration is properly set up.');
-  console.log('Available env vars:', Object.keys(import.meta.env));
+// Create a safe Supabase client that doesn't crash if env vars are missing
+let supabase: any = null;
+
+try {
+  if (supabaseUrl && supabaseKey) {
+    supabase = createClient(supabaseUrl, supabaseKey);
+  }
+} catch (error) {
+  console.log('Supabase client creation failed - continuing without backend functionality');
 }
 
-export const supabase = supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
+export { supabase };
 
 interface AuthContextType {
   user: User | null;
@@ -43,9 +48,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check if Supabase is properly configured
+    // If Supabase is not available, just set loading to false and continue
     if (!supabase) {
-      console.error('Supabase client not initialized');
       setLoading(false);
       return;
     }
