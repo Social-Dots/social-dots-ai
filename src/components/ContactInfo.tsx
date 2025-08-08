@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Linkedin, Phone, MessageSquare } from 'lucide-react';
 import { company } from '@/config/company';
 import CalendarButton from '@/components/CalendarButton';
-import AIVoiceInterface from '@/components/AIVoiceInterface';
+import RetellAIInterface from '@/components/RetellAIInterface';
 const ContactInfo = () => {
   const [isAIInterfaceOpen, setIsAIInterfaceOpen] = useState(false);
 
@@ -73,8 +73,8 @@ const ContactInfo = () => {
           </div>
         </div>
         
-        {/* AI Interface Modal */}
-        <AIVoiceInterface 
+        {/* Retell AI Interface Modal */}
+        <RetellAIInterface 
           isOpen={isAIInterfaceOpen} 
           onClose={() => setIsAIInterfaceOpen(false)} 
         />
