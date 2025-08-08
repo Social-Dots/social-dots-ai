@@ -21,57 +21,57 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "AI Customer Service Automation",
-      brand: "Canadian Restaurant Chain",
-      description: "AI chatbots and automated customer service system handling 80% of inquiries, reducing call center costs by 60%.",
-      tags: ["AI Automation", "Customer Service", "Cost Reduction", "24/7 Support"],
-      imageUrl: "/ai-call-center-automation.jpg",
-      results: ["60% Cost Reduction", "80% Query Resolution", "24/7 Availability", "Improved Customer Satisfaction"],
-      link: "/portfolio/ai-customer-service",
+      title: "AI Thumbnail Generator",
+      brand: "Content Teams",
+      description: "Automated, branded thumbnails generated from titles and keywords to boost CTR and production speed.",
+      tags: ["AI Automation", "Brand Kit", "YouTube", "Batch"],
+      imageUrl: "/social-media-ai.jpg",
+      results: ["10x Faster Production", "Brand Consistency", "CTR Uplift"],
+      link: "/portfolio/ai-thumbnail-generator",
       featured: true
     },
     {
       id: 2,
-      title: "E-commerce Digital Transformation",
-      brand: "Local Retail Business",
-      description: "Complete digital transformation with custom website, inventory management, and automated marketing.",
-      tags: ["E-commerce", "Digital Transformation", "Marketing Automation", "Sales Growth"],
-      imageUrl: "/web-development-ai.jpg",
-      results: ["300% Online Sales Increase", "Automated Inventory", "Smart Marketing Flows", "Mobile-First Design"],
-      link: "/portfolio/ecommerce-growth",
+      title: "AI Fake Listing Tester",
+      brand: "Marketplaces",
+      description: "AI detects fake or low-quality listings across marketplaces with scoring and evidence.",
+      tags: ["Trust & Safety", "Computer Vision", "NLP", "Moderation"],
+      imageUrl: "/digital-marketing-ai.jpg",
+      results: ["Reduced Fraud", "Buyer Confidence", "Less Manual Review"],
+      link: "/portfolio/ai-fake-listing-tester",
       featured: true
     },
     {
       id: 3,
-      title: "Social Media AI Management",
-      brand: "Canadian Marketing Agency",
-      description: "AI-powered content creation and scheduling system managing 50+ client accounts with automated engagement.",
-      tags: ["Social Media", "AI Content", "Automation", "Client Management"],
-      imageUrl: "/social-media-ai.jpg",
-      results: ["50+ Clients Managed", "AI Content Creation", "Automated Engagement", "Performance Analytics"],
-      link: "/portfolio/social-media-automation",
+      title: "AI Business Hub",
+      brand: "SMBs",
+      description: "Centralized AI workflows for lead intake, routing, docs, and analytics across your tools.",
+      tags: ["Automation", "CRM", "Docs", "Slack"],
+      imageUrl: "/business-automation-ai.jpg",
+      results: ["60–80% Admin Offloaded", "Faster SLAs", "Weekly Insights"],
+      link: "/portfolio/ai-business-hub",
       featured: false
     },
     {
       id: 4,
-      title: "Lead Generation System",
-      brand: "Professional Services Firm",
-      description: "Custom CRM integration with automated lead scoring, email sequences, and conversion tracking.",
-      tags: ["Lead Generation", "CRM Integration", "Email Automation", "Conversion Tracking"],
-      imageUrl: "/digital-marketing-ai.jpg",
-      results: ["2x Qualified Leads", "Automated Lead Scoring", "Smart Email Sequences", "Conversion Tracking"],
-      link: "/portfolio/lead-generation",
+      title: "AI Voice Agent",
+      brand: "Sales & Support",
+      description: "Inbound/outbound AI voice for lead capture, booking, and triage with human handoff.",
+      tags: ["Voice", "Scheduling", "CRM", "After-hours"],
+      imageUrl: "/ai-call-center-automation.jpg",
+      results: ["Higher Booking Rate", "24/7 Coverage", "Unified Leads"],
+      link: "/portfolio/ai-voice-agent",
       featured: false
     },
     {
       id: 5,
-      title: "Business Process Automation",
-      brand: "Growing Tech Startup",
-      description: "Comprehensive workflow automation including document processing, client onboarding, and reporting.",
-      tags: ["Process Automation", "Workflow Optimization", "Document Processing", "Time Savings"],
-      imageUrl: "/business-automation-ai.jpg",
-      results: ["20 Hours/Week Saved", "Automated Onboarding", "Smart Document Processing", "Real-time Reporting"],
-      link: "/portfolio/process-automation",
+      title: "Cricket Cadets",
+      brand: "CricketCadets.ca",
+      description: "Website + AI concierge for a cricket coaching academy: bookings and parent FAQs.",
+      tags: ["Web", "AI Concierge", "Scheduling", "Airtable"],
+      imageUrl: "/web-development-ai.jpg",
+      results: ["More Trial Sign-ups", "Faster Responses", "Reduced Admin"],
+      link: "/portfolio/cricket-cadets",
       featured: false
     }
   ];
@@ -87,7 +87,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <PageLayout>
+    <PageLayout showContact={false}>
       {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-to-br from-social-dots-blue via-social-dots-blue-light to-social-dots-blue overflow-hidden">
         <DotsPattern animated={true} className="opacity-20" />
@@ -318,11 +318,23 @@ const Portfolio = () => {
               Join the growing number of Canadian businesses leveraging AI and automation for competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-social-dots-orange hover:bg-social-dots-orange/90 text-white text-lg px-8 py-6">
-                Start Your Project
-                <ArrowRight className="ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+              <Link to="/services">
+                <Button size="lg" className="bg-social-dots-orange hover:bg-social-dots-orange/90 text-white text-lg px-8 py-6">
+                  Start Your Project
+                  <ArrowRight className="ml-2" />
+                </Button>
+              </Link>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-white text-white hover:bg-white/10 text-lg px-8 py-6"
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    window.location.href = '/#contact';
+                  }
+                }}
+              >
                 Schedule Consultation
                 <MessageSquare className="ml-2" />
               </Button>

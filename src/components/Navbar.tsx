@@ -5,7 +5,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link as RouterLink } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-import SocialDotsLogo from '@/components/SocialDotsLogo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,10 +48,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center">
-              <SocialDotsLogo 
-                showText={true}
-                animated={false}
-                className={cn(isScrolled ? "" : "text-white [&_span]:text-white")}
+              <img
+                src="/6-01.png"
+                alt="Social Dots"
+                className={cn("h-8 md:h-9 w-auto object-contain transition", isScrolled ? "" : "invert")}
+                loading="eager"
+                decoding="async"
               />
             </RouterLink>
           </div>
@@ -62,19 +63,19 @@ const Navbar = () => {
             <NavigationMenu className={cn(isScrolled ? "" : "text-white")}>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <RouterLink to="/">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuLink asChild>
+                    <RouterLink to="/" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Home
-                    </NavigationMenuLink>
-                  </RouterLink>
+                    </RouterLink>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <RouterLink to="/about">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuLink asChild>
+                    <RouterLink to="/about" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       About Us
-                    </NavigationMenuLink>
-                  </RouterLink>
+                    </RouterLink>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
@@ -82,7 +83,13 @@ const Navbar = () => {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
+                    <ul className="grid gap-3 p-4 w-[420px]">
+                      <li>
+                        <RouterLink to="/services" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">All Services</div>
+                          <p className="text-sm text-gray-500">Explore everything we offer</p>
+                        </RouterLink>
+                      </li>
                       <li>
                         <RouterLink to="/services/ai-concierge" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">AI Concierge</div>
@@ -93,12 +100,6 @@ const Navbar = () => {
                         <RouterLink to="/services/ai-business-assistant" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">AI Business Assistant</div>
                           <p className="text-sm text-gray-500">Automate tasks, reports, and workflows</p>
-                        </RouterLink>
-                      </li>
-                      <li>
-                        <RouterLink to="/services/video-avatars" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Video Avatars</div>
-                          <p className="text-sm text-gray-500">AI-generated avatars for scalable content</p>
                         </RouterLink>
                       </li>
                       <li>
@@ -114,27 +115,21 @@ const Navbar = () => {
                         </RouterLink>
                       </li>
                       <li>
+                        <RouterLink to="/services/ai-support-agent" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">AI Support Agent</div>
+                          <p className="text-sm text-gray-500">24/7 support with human handoff</p>
+                        </RouterLink>
+                      </li>
+                      <li>
+                        <RouterLink to="/services/video-avatars" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Video Avatars</div>
+                          <p className="text-sm text-gray-500">AI-generated avatars for scalable content</p>
+                        </RouterLink>
+                      </li>
+                      <li>
                         <RouterLink to="/services/web-services" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Web Services</div>
                           <p className="text-sm text-gray-500">Professional landing pages from $299</p>
-                        </RouterLink>
-                      </li>
-                      <li>
-                        <RouterLink to="/services/ai-solutions" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">AI Solutions</div>
-                          <p className="text-sm text-gray-500">Custom AI tools and automation</p>
-                        </RouterLink>
-                      </li>
-                      <li>
-                        <RouterLink to="/services/digital-marketing" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Digital Marketing</div>
-                          <p className="text-sm text-gray-500">Complete marketing systems</p>
-                        </RouterLink>
-                      </li>
-                      <li>
-                        <RouterLink to="/services/social-media" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Social Media</div>
-                          <p className="text-sm text-gray-500">Strategic content and management</p>
                         </RouterLink>
                       </li>
                     </ul>
@@ -142,27 +137,27 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <RouterLink to="/portfolio">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuLink asChild>
+                    <RouterLink to="/portfolio" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Portfolio
-                    </NavigationMenuLink>
-                  </RouterLink>
+                    </RouterLink>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <RouterLink to="/blog">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuLink asChild>
+                    <RouterLink to="/blog" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Blog
-                    </NavigationMenuLink>
-                  </RouterLink>
+                    </RouterLink>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <RouterLink to="/careers">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuLink asChild>
+                    <RouterLink to="/careers" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Careers
-                    </NavigationMenuLink>
-                  </RouterLink>
+                    </RouterLink>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
