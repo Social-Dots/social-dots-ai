@@ -208,7 +208,9 @@ const Index = () => {
       
       {/* Blog Preview */}
       <BlogPreview />
-    </PageLayout>
+      </PageLayout>
+    </AccessibilityEnhancements>
+  </PWAEnhancements>
   );
 };
 
