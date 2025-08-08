@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center">
               <img
-                src="/6-01.png"
+                src="/lovable-uploads/39671993-1bb4-4bb6-8819-3ca5c07c0042.png"
                 alt="Social Dots"
                 className={cn("h-8 md:h-9 w-auto object-contain transition", isScrolled ? "" : "invert")}
                 loading="eager"
