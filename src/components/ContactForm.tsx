@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import emailjs from 'emailjs-com';
+import { company } from '@/config/company';
 
 // Updated schema with honeypot field validation
 const formSchema = z.object({
@@ -82,8 +83,8 @@ const ContactForm = () => {
         from_name: emailData.name,
         from_email: emailData.email,
         message: emailData.message,
-        to_name: 'WRLDS Team', // Adding recipient name parameter
-        reply_to: emailData.email // Keeping reply_to for compatibility
+        to_name: 'Social Dots Team',
+        reply_to: emailData.email
       };
       
       console.log('Sending email with params:', templateParams);
@@ -119,7 +120,7 @@ const ContactForm = () => {
       
       // More detailed error logging
       if (error && typeof error === 'object' && 'text' in error) {
-        console.error('Error details:', (error as any).text);
+        console.error('Error details:', (error as { text: unknown }).text);
       }
       
       toast({
@@ -142,7 +143,7 @@ const ContactForm = () => {
             Contact Us Today
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Have questions about our AI-powered sensor solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
+               Have questions about our AI services? Reach out to our team and let's discuss how we can help automate and grow your business.
           </p>
         </div>
         
@@ -208,6 +209,11 @@ const ContactForm = () => {
                       </FormControl>
                     </FormItem>} />
                 
+                <a href={`tel:${company.phoneE164}`} className="block w-full mb-3">
+                  <button type="button" className="w-full bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center">
+                    Call {company.phonePretty}
+                  </button>
+                </a>
                 <button type="submit" disabled={isSubmitting} className="w-full bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center disabled:opacity-70">
                   {isSubmitting ? "Sending..." : <>
                       Send Message
@@ -225,7 +231,7 @@ const ContactForm = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
               <p className="text-gray-600 mb-2">For general inquiries:</p>
-              <a href="mailto:info@wrlds.com" className="text-blue-500 hover:underline">hello@wrlds.com</a>
+              <a href={`mailto:${company.email}`} className="text-blue-500 hover:underline">{company.email}</a>
               <p className="text-gray-600 mt-2 mb-2">
             </p>
             </div>

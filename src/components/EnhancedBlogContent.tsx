@@ -107,7 +107,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
           </div>
         );
       
-      case 'chart':
+      case 'chart': {
         if (!section.chartData) return null;
         
         const colors = ['#000000', '#666666', '#999999', '#CCCCCC'];
@@ -149,6 +149,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
             </CardContent>
           </Card>
         );
+      }
       
       case 'table':
         if (!section.tableData) return null;
