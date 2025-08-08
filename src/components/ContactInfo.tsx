@@ -25,7 +25,6 @@ const ContactInfo = () => {
               onClick={() => setIsAIInterfaceOpen(true)}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center"
             >
-              <MessageSquare className="mr-2 h-5 w-5" />
               Talk to AI Agent
             </button>
             <CalendarButton 

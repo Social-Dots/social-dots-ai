@@ -51,7 +51,6 @@ const CalendarButton = ({ label, color, className }: CalendarButtonProps) => {
     <div ref={containerRef} className={className}>
       <a href={company.calendar.url} target="_blank" rel="noopener noreferrer">
         <Button variant="outline">
-          <Calendar className="w-4 h-4 mr-2" />
           {label ?? company.calendar.label}
         </Button>
       </a>
