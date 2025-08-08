@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import { AuthProvider } from "@/components/auth/AuthProvider";
 import AdminDashboard from "./pages/AdminDashboard";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -34,12 +35,14 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
+      <AuthProvider>
+        <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/projects/firecat" element={<FireCatProject />} />
             <Route path="/projects/sport-retail" element={<SportRetailProject />} />
             <Route path="/projects/workwear" element={<WorkwearProject />} />
@@ -55,8 +58,7 @@ const App = () => {
             <Route path="/services/ai-outbound-agent" element={<AIOutboundSalesAgent />} />
             <Route path="/services/web-services" element={<WebServices />} />
             <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/admin" element={<AdminDashboard />} />
-                <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
@@ -64,7 +66,8 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-      </TooltipProvider>
+        </TooltipProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 };
