@@ -11,6 +11,7 @@ import DotsPattern from '@/components/DotsPattern';
 import PricingCalculator from '@/components/PricingCalculator';
 import DemoVideos from '@/components/DemoVideos';
 import LiveChatWidget from '@/components/LiveChatWidget';
+import { TestimonialDisplay } from '@/components/testimonials/TestimonialDisplay';
 import { AccessibilityEnhancements } from '@/components/AccessibilityEnhancements';
 import { PWAEnhancements } from '@/components/PWAEnhancements';
 import { motion } from "framer-motion";
@@ -202,6 +203,9 @@ const Index = () => {
       
       {/* Social Dots Advantage */}
       <WhySocialDots />
+      
+      {/* Customer Testimonials */}
+      <TestimonialDisplay />
       
       {/* Latest Projects Preview */}
       <Projects />
