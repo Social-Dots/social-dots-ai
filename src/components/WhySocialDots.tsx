@@ -49,7 +49,7 @@ const AnimatedCounter = ({
       {prefix}{count.toFixed(decimals)}{suffix}
     </span>;
 };
-const WhyWrlds = () => {
+const WhySocialDots = () => {
   const isMobile = useIsMobile();
   const containerVariants = {
     hidden: {
@@ -77,7 +77,7 @@ const WhyWrlds = () => {
       }
     }
   };
-  return <section id="why-wrlds" className="relative py-16 md:py-24 bg-white overflow-hidden">
+  return <section id="why-social-dots" className="relative py-16 md:py-24 bg-white overflow-hidden">
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-12 md:mb-16" initial="hidden" whileInView="visible" viewport={{
         once: true,
@@ -193,4 +193,4 @@ const WhyWrlds = () => {
       </div>
     </section>;
 };
-export default WhyWrlds;
+export default WhySocialDots;
