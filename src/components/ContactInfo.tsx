@@ -19,23 +19,9 @@ const ContactInfo = () => {
             Ready to transform your business with AI? Talk to our AI agent for instant support or book an appointment with our team for personalized assistance.
           </p>
           
-          {/* Primary CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <button 
-              onClick={() => setIsAIInterfaceOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center"
-            >
-              Talk to AI Agent
-            </button>
-            <CalendarButton 
-              label="Book an Appointment" 
-              className="px-8 py-4 rounded-xl text-lg font-semibold" 
-            />
-          </div>
-          
           {/* Simple Contact Info */}
           <div className="text-center space-y-4">
-            <p className="text-gray-600">Or reach us directly:</p>
+            <p className="text-gray-600">Get in touch with us:</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href={`tel:${company.phoneE164}`} className="flex items-center text-gray-700 hover:text-blue-600">
                 <Phone className="w-5 h-5 mr-2" />
