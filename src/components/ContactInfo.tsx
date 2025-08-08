@@ -33,45 +33,19 @@ const ContactInfo = () => {
               className="px-8 py-4 rounded-xl text-lg font-semibold" 
             />
           </div>
-        </div>
-
-        {/* Contact Options */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* AI Demo */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-200">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                <MessageSquare className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Try Our AI Agent</h3>
-              <p className="text-gray-600 mb-4">Experience our AI technology with an interactive demo</p>
-              <button 
-                onClick={() => setIsAIInterfaceOpen(true)}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
-              >
-                Start Demo
-              </button>
-            </div>
-          </div>
-
-          {/* Direct Contact */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-200">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <Phone className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Call or Email</h3>
-              <p className="text-gray-600 mb-4">Speak directly with our team</p>
-              <div className="space-y-3">
-                <a href={`tel:${company.phoneE164}`} className="flex items-center text-gray-700 hover:text-blue-600 justify-center">
-                  <Phone className="w-5 h-5 mr-2" />
-                  {company.phonePretty}
-                </a>
-                <a href={`mailto:${company.email}`} className="flex items-center text-gray-700 hover:text-blue-600 justify-center">
-                  <Mail className="w-5 h-5 mr-2" />
-                  {company.email}
-                </a>
-              </div>
+          
+          {/* Simple Contact Info */}
+          <div className="text-center space-y-4">
+            <p className="text-gray-600">Or reach us directly:</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href={`tel:${company.phoneE164}`} className="flex items-center text-gray-700 hover:text-blue-600">
+                <Phone className="w-5 h-5 mr-2" />
+                {company.phonePretty}
+              </a>
+              <a href={`mailto:${company.email}`} className="flex items-center text-gray-700 hover:text-blue-600">
+                <Mail className="w-5 h-5 mr-2" />
+                {company.email}
+              </a>
             </div>
           </div>
         </div>
