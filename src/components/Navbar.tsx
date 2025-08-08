@@ -51,10 +51,14 @@ const Navbar = () => {
               <img
                 src="/lovable-uploads/39671993-1bb4-4bb6-8819-3ca5c07c0042.png"
                 alt="Social Dots"
-                className={cn("h-8 md:h-9 w-auto object-contain transition", isScrolled ? "" : "invert")}
+                className={cn("h-8 md:h-9 w-auto object-contain transition mr-3", isScrolled ? "" : "invert")}
                 loading="eager"
                 decoding="async"
               />
+              <span className="text-2xl font-bold">
+                <span className="text-blue-700">Social</span>
+                <span className="text-yellow-500">Dots</span>
+              </span>
             </RouterLink>
           </div>
           
