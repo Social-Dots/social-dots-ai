@@ -8,6 +8,11 @@ import BlogPreview from '@/components/BlogPreview';
 import SEO from '@/components/SEO';
 import SocialDotsLogo from '@/components/SocialDotsLogo';
 import DotsPattern from '@/components/DotsPattern';
+import PricingCalculator from '@/components/PricingCalculator';
+import DemoVideos from '@/components/DemoVideos';
+import LiveChatWidget from '@/components/LiveChatWidget';
+import { AccessibilityEnhancements } from '@/components/AccessibilityEnhancements';
+import { PWAEnhancements } from '@/components/PWAEnhancements';
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -58,8 +63,10 @@ const Index = () => {
   ];
 
   return (
-    <PageLayout>
-      <SEO 
+    <PWAEnhancements>
+      <AccessibilityEnhancements>
+        <PageLayout>
+          <SEO
         title="Social Dots - AI-Powered Digital Solutions for Canadian Businesses" 
         description="Transform your business with Social Dots AI solutions. From AI receptionists to automated workflows, we help Canadian SMBs work smarter with cutting-edge AI technology."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
