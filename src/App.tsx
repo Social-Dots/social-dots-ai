@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import AdminDashboard from "./pages/AdminDashboard";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FireCatProject from "./pages/FireCatProject";
@@ -54,7 +55,8 @@ const App = () => {
             <Route path="/services/ai-outbound-agent" element={<AIOutboundSalesAgent />} />
             <Route path="/services/web-services" element={<WebServices />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/about" element={<About />} />
+                <Route path="/admin" element={<AdminDashboard />} />
+                <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
