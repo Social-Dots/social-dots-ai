@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 pb-12">
           <div className="lg:col-span-2">
             <img 
-              src="/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png" 
+              src="/lovable-uploads/36cf5468-4d64-4c35-9d46-27ee9ad56720.png" 
               alt="Social Dots Logo" 
               className="h-12 w-auto mb-8 object-contain"
               loading="lazy"
