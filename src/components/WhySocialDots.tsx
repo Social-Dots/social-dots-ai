@@ -108,10 +108,10 @@ const WhySocialDots = () => {
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-secondary/5 to-secondary/10 p-6 rounded-xl border border-secondary/20 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-secondary/10 rounded-full p-3 mr-4">
-                  <Sparkles className="w-6 h-6 text-secondary" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <Sparkles className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Human-AI Hybrid Workflow</h4>
@@ -120,10 +120,10 @@ const WhySocialDots = () => {
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-accent/5 to-accent/10 p-6 rounded-xl border border-accent/20 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-accent/10 rounded-full p-3 mr-4">
-                  <Zap className="w-6 h-6 text-accent" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Flat Rates. No BS. Fast Delivery.</h4>
@@ -132,7 +132,7 @@ const WhySocialDots = () => {
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-gradient-to-r from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 hover:shadow-lg transition-all">
               <div className="flex items-start">
                 <div className="bg-primary/10 rounded-full p-3 mr-4">
                   <Shield className="w-6 h-6 text-primary" />
