@@ -4,7 +4,9 @@
       "Bash(git checkout:*)",
       "Bash(npm run dev:*)",
       "Bash(npm install)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git merge:*)",
+      "Bash(git config:*)"
     ],
     "deny": []
   }
