@@ -94,39 +94,6 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 mx-auto">
-        <motion.div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4" variants={containerVariants} initial="hidden" animate="visible" transition={{
-        delay: 0.6
-      }}>
-          <Link to="/ai-concierge" className="block" onClick={() => window.scrollTo(0, 0)}>
-            <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer" variants={itemVariants}>
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-100 flex items-center justify-center rounded-lg text-blue-600 mb-2 md:mb-3">
-                <Globe className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">AI Concierge</h3>
-              <p className="text-gray-600 text-xs md:text-sm">Never miss a call or message again. Smart agents handle bookings, inquiries, and customer chats — 24/7.</p>
-            </motion.div>
-          </Link>
-          
-          <Link to="/ai-business-assistant" className="block" onClick={() => window.scrollTo(0, 0)}>
-            <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer" variants={itemVariants}>
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-purple-100 flex items-center justify-center rounded-lg text-purple-600 mb-2 md:mb-3">
-                <Code className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">AI Business Agents</h3>
-              <p className="text-gray-600 text-xs md:text-sm">Automate the boring stuff — scheduling, follow-ups, lead nurturing, reporting, and more.</p>
-            </motion.div>
-          </Link>
-          
-          <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-green-100 flex items-center justify-center rounded-lg text-green-600 mb-2 md:mb-3">
-              <BarChart3 className="w-5 h-5 md:w-6 md:h-6" />
-            </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Digital Transformation</h3>
-            <p className="text-gray-600 text-xs md:text-sm">From websites to full AI workflows, we modernize your operations with proven results.</p>
-          </motion.div>
-        </motion.div>
-      </div>
     </motion.div>;
 };
 
