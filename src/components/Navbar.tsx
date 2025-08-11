@@ -56,7 +56,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
                 alt="Social Dots Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
               <span className="text-2xl font-bold">
                 <span className="text-blue-700">Social</span>
