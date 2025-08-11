@@ -72,7 +72,6 @@ const Hero = () => {
                     Talk to AI Agent
                     <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                   </button>
-                  <p className="text-gray-300 text-xs sm:text-sm mt-1">Get instant AI-powered support anytime.</p>
                 </div>
                 
                 {/* Secondary CTA - Book an Appointment */}
@@ -86,7 +85,6 @@ const Hero = () => {
                     Book an Appointment
                     <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
-                  <p className="text-gray-300 text-xs sm:text-sm mt-1">Schedule a meeting with our team for personalized assistance.</p>
                 </div>
               </motion.div>
             </motion.div>
