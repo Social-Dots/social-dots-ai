@@ -56,7 +56,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
                 alt="Social Dots Logo" 
-                className="h-24 w-auto object-contain"
+                className="h-8 w-auto object-contain"
                 loading="eager"
                 decoding="sync"
               />
