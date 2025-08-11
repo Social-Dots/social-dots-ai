@@ -19,16 +19,11 @@ const ContactInfo = () => {
             Get a free 30-minute strategy session with our experts. Learn how AI automation can help your business grow and thrive.
           </p>
           
-          {/* Enhanced Get in Touch Button */}
+          {/* Plain Get in Touch text */}
           <div className="mb-8">
-            <a 
-              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0XVUI4MN2ep4PxV_FNEo2RwyEsE_qQTTyakkMLwGfvzrBJEEBQeEfQTxAGWtZZWHQ7DNrOAEJd?gv=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-            >
+            <span className="text-gray-600 font-medium text-lg">
               Get in Touch
-            </a>
+            </span>
           </div>
           
           {/* Contact Information Block */}
