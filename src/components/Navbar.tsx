@@ -53,10 +53,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center">
-              <span className="text-2xl font-bold">
-                <span className="text-blue-700">Social</span>
-                <span className="text-yellow-500">Dots</span>
-              </span>
+              <img 
+                src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
+                alt="Social Dots Logo" 
+                className="h-8 w-auto"
+              />
             </RouterLink>
           </div>
           
@@ -266,6 +267,11 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      
+      <LoginModal 
+        isOpen={isLoginModalOpen} 
+        onClose={() => setIsLoginModalOpen(false)} 
+      />
     </motion.nav>
   );
 };
