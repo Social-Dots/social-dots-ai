@@ -32,20 +32,38 @@ const ContactInfo = () => {
           </div>
           
           {/* Contact Information Block */}
-          <div className="text-center space-y-6">
-            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-              <div className="flex flex-col items-center bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 min-w-[280px]">
-                <a href={`tel:${company.phoneE164}`} className="flex items-center text-gray-900 hover:text-blue-600 transition-colors font-medium text-xl mb-3 group">
-                  <Phone className="w-5 h-5 mr-3 text-gray-600 group-hover:text-blue-600 transition-colors" />
-                  {company.phonePretty}
-                </a>
-                <p className="text-sm text-gray-500 font-medium">Mon–Fri, 9 AM–6 PM EST</p>
+          <div className="text-center space-y-8">
+            <div className="flex flex-col lg:flex-row gap-6 justify-center items-stretch max-w-4xl mx-auto">
+              <div className="flex-1 bg-white p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl hover:border-blue-200/60 transition-all duration-500 group backdrop-blur-sm">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition-colors duration-300">
+                    <Phone className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div className="text-center">
+                    <a href={`tel:${company.phoneE164}`} className="block text-gray-900 hover:text-blue-600 transition-colors font-semibold text-xl mb-2 group-hover:scale-105 transition-transform duration-300">
+                      {company.phonePretty}
+                    </a>
+                    <p className="text-sm text-gray-500 font-medium px-3 py-1 bg-gray-50 rounded-full inline-block">
+                      Mon–Fri, 9 AM–6 PM EST
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 min-w-[280px]">
-                <a href={`mailto:${company.email}`} className="flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors font-medium text-xl group">
-                  <Mail className="w-5 h-5 mr-3 text-gray-600 group-hover:text-blue-600 transition-colors" />
-                  {company.email}
-                </a>
+              
+              <div className="flex-1 bg-white p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl hover:border-orange-200/60 transition-all duration-500 group backdrop-blur-sm">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+                    <Mail className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div className="text-center">
+                    <a href={`mailto:${company.email}`} className="block text-gray-900 hover:text-orange-600 transition-colors font-semibold text-xl group-hover:scale-105 transition-transform duration-300">
+                      {company.email}
+                    </a>
+                    <p className="text-sm text-gray-500 font-medium mt-2">
+                      Get a response within 24 hours
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
