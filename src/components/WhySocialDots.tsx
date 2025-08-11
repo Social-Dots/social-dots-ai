@@ -89,44 +89,6 @@ const WhySocialDots = () => {
           </motion.p>
         </motion.div>
         
-        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" initial="hidden" whileInView="visible" viewport={{
-        once: true,
-        margin: "-100px"
-      }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="bg-gradient-to-br from-primary/5 to-primary/10 p-6 rounded-xl border border-primary/20 text-center hover:from-primary/10 hover:to-primary/15 transition-all">
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-primary" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={15} suffix="+" /> Years
-            </h3>
-            <p className="text-gray-700">of experience from top Canadian tech companies brought to small business solutions</p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="bg-gradient-to-br from-secondary/5 to-secondary/10 p-6 rounded-xl border border-secondary/20 text-center hover:from-secondary/10 hover:to-secondary/15 transition-all">
-            <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-secondary" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              $<AnimatedCounter end={299} />
-            </h3>
-            <p className="text-gray-700">
-              Starting price for professional landing pages - flat rates, no hidden fees, fast delivery
-            </p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="bg-gradient-to-br from-accent/5 to-accent/10 p-6 rounded-xl border border-accent/20 text-center hover:from-accent/10 hover:to-accent/15 transition-all">
-            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-8 h-8 text-accent" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={100} suffix="%" />
-            </h3>
-            <p className="text-gray-700">
-              Commitment to ethical outsourcing and cross-border collaboration that creates real economic impact
-            </p>
-          </motion.div>
-        </motion.div>
         
         <motion.div className="mb-12" initial="hidden" whileInView="visible" viewport={{
         once: true,
