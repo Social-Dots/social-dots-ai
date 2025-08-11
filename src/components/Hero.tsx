@@ -60,7 +60,7 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>Say Hello to Your New AI Team</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
-                We help Canadian small businesses work smarter, faster, and better — with cutting-edge AI agents, AI receptionists, and smart automations that actually get things done.
+                We are proudly based in Canada and deliver cutting-edge AI technology to businesses across the globe. Whether you need AI agents, virtual receptionists, or smart automation, we create solutions that save time, boost productivity, and deliver better results.<br />No matter where you are in the world — we're ready to take your business to the next level
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 {/* Primary CTA - Talk to AI Agent */}
