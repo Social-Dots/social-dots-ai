@@ -9,9 +9,6 @@ const ContactInfo = () => {
   return <section id="contact" className="bg-gradient-to-b from-white to-black text-white relative py-[15px] md:py-[25px]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-white text-black rounded-full text-sm font-medium">
-            Get In Touch
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Let's Build Your AI-Powered Future – Book Your Free Consultation Today.
           </h2>
