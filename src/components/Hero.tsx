@@ -78,8 +78,8 @@ const Hero = () => {
                 {/* Secondary CTA - Book an Appointment */}
                 <div className="text-center">
                   <a 
-                    href="https://calendly.com/social-dots/consultation" 
-                    target="_blank" 
+                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0XVUI4MN2ep4PxV_FNEo2RwyEsE_qQTTyakkMLwGfvzrBJEEBQeEfQTxAGWtZZWHQ7DNrOAEJd?gv=true" 
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-transparent border border-white text-white rounded-md hover:bg-white hover:text-gray-900 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                   >
