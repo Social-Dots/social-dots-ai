@@ -4,7 +4,7 @@ import Hero from '@/components/Hero';
 
 import Projects from '@/components/Projects';
 import WhySocialDots from '@/components/WhySocialDots';
-import BlogPreview from '@/components/BlogPreview';
+
 import SEO from '@/components/SEO';
 import SocialDotsLogo from '@/components/SocialDotsLogo';
 import DotsPattern from '@/components/DotsPattern';
@@ -148,8 +148,7 @@ const Index = () => {
       {/* Latest Projects Preview */}
       <Projects />
       
-      {/* Blog Preview */}
-      <BlogPreview />
+      
       </PageLayout>
     </AccessibilityEnhancements>
   </PWAEnhancements>
