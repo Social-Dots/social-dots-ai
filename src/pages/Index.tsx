@@ -77,66 +77,6 @@ const Index = () => {
       {/* Enhanced Hero with Social Dots Focus */}
       <Hero />
       
-      {/* AI Services Showcase */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <DotsPattern animated={true} color="mixed" density="low" className="opacity-30" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <div className="flex justify-center mb-6">
-              <SocialDotsLogo animated={true} showText={false} className="scale-150" />
-            </div>
-            <Badge className="mb-4 bg-social-dots-blue text-white">
-              AI-Powered Solutions
-            </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              Meet Your New
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-social-dots-blue to-social-dots-orange">
-                AI Team
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Social Dots specializes in AI automation that actually works for Canadian small businesses. 
-              No tech jargon. Just results that matter.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {aiServices.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Link to={service.link}>
-                  <Card className="h-full hover:shadow-2xl transition-all duration-300 group cursor-pointer overflow-hidden">
-                    <CardHeader className="text-center">
-                      <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <service.icon className="w-8 h-8 text-white" />
-                      </div>
-                      <CardTitle className="text-lg mb-2">{service.title}</CardTitle>
-                      <CardDescription className="text-sm">{service.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <Button variant="outline" className="w-full group-hover:bg-social-dots-blue group-hover:text-white transition-colors">
-                        Learn More
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Portfolio Preview */}
       <section className="py-20 bg-white">
