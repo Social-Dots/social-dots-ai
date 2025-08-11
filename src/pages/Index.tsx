@@ -138,8 +138,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Features Section */}
-      <Features />
       
       {/* Social Dots Advantage */}
       <WhySocialDots />
