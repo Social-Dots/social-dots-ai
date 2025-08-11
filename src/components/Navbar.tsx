@@ -186,8 +186,8 @@ const Navbar = () => {
                     <Button 
                       onClick={() => setIsLoginModalOpen(true)}
                       className={cn("px-4 py-2 rounded-md transition-colors", 
-                        isScrolled ? "bg-social-dots-orange text-white hover:bg-social-dots-orange/90" : 
-                        "bg-social-dots-orange text-white hover:bg-social-dots-orange/90"
+                        isScrolled ? "bg-white text-black hover:bg-gray-100" : 
+                        "bg-white text-black hover:bg-gray-100"
                       )}
                     >
                       Login
@@ -266,7 +266,7 @@ const Navbar = () => {
           ) : (
             <Button 
               onClick={() => setIsLoginModalOpen(true)}
-              className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-white bg-social-dots-orange hover:bg-social-dots-orange/90"
+              className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-black bg-white hover:bg-gray-100"
             >
               Login
             </Button>
