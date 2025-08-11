@@ -1,7 +1,7 @@
 
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
+
 import Projects from '@/components/Projects';
 import WhySocialDots from '@/components/WhySocialDots';
 import BlogPreview from '@/components/BlogPreview';
@@ -138,8 +138,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Features Section */}
-      <Features />
       
       {/* Social Dots Advantage */}
       <WhySocialDots />
