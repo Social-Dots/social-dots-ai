@@ -52,13 +52,15 @@ const Navbar = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <RouterLink to="/" className="flex items-center space-x-3">
+            <RouterLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               <img 
                 src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
                 alt="Social Dots Logo" 
-                className="h-12 w-auto"
+                className="h-8 w-auto object-contain"
+                loading="eager"
+                decoding="sync"
               />
-              <span className="text-2xl font-bold">
+              <span className="text-2xl font-bold leading-none">
                 <span className="text-blue-700">Social</span>
                 <span className="text-yellow-500">Dots</span>
               </span>
