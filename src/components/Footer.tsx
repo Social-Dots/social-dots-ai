@@ -55,7 +55,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/36cf5468-4d64-4c35-9d46-27ee9ad56720.png" 
               alt="Social Dots Logo" 
-              className="h-12 w-auto mb-8 object-contain"
+              className="h-16 w-auto mb-8 object-contain"
               loading="lazy"
               decoding="async"
             />
