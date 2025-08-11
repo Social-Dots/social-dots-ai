@@ -55,11 +55,11 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/36cf5468-4d64-4c35-9d46-27ee9ad56720.png" 
               alt="Social Dots Logo" 
-              className="h-20 w-auto mb-8 object-contain"
+              className="h-40 w-auto mb-8 object-contain"
               loading="lazy"
               decoding="async"
             />
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-white mb-6 leading-relaxed">
               Social Dots provides AI-powered digital solutions for Canadian small businesses. We specialize in AI automation, voice agents, and modern web services that help businesses grow and thrive. Trusted by Canadian businesses, delivering proven results in lead generation with cutting-edge automation.
             </p>
             <div className="mb-6">
