@@ -64,7 +64,7 @@ const Footer = () => {
             </p>
             <div className="mb-6">
               <p className="text-sm text-blue-400 font-medium mb-2">✓ Trusted by 10+ Canadian businesses</p>
-              <p className="text-gray-300 mb-4">Toronto, Ontario, Canada</p>
+              <p className="text-white mb-4">Toronto, Ontario, Canada</p>
             </div>
             <div className="flex space-x-4">
               <a href={company.social.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-all hover:bg-blue-600 hover:text-white hover:scale-105">
