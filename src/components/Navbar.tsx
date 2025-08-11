@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <RouterLink to="/" className="flex items-center gap-1 hover:opacity-80 transition-opacity">
+            <RouterLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
                 alt="Social Dots Logo" 
