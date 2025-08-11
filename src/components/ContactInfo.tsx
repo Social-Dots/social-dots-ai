@@ -34,16 +34,16 @@ const ContactInfo = () => {
           {/* Contact Information Block */}
           <div className="text-center space-y-6">
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-              <div className="flex flex-col items-center bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl border-2 border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300">
-                <a href={`tel:${company.phoneE164}`} className="flex items-center text-blue-700 hover:text-blue-800 transition-colors font-semibold text-lg mb-2">
-                  <Phone className="w-6 h-6 mr-3 text-blue-600" />
+              <div className="flex flex-col items-center bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 min-w-[280px]">
+                <a href={`tel:${company.phoneE164}`} className="flex items-center text-gray-900 hover:text-blue-600 transition-colors font-medium text-xl mb-3 group">
+                  <Phone className="w-5 h-5 mr-3 text-gray-600 group-hover:text-blue-600 transition-colors" />
                   {company.phonePretty}
                 </a>
-                <p className="text-sm text-blue-600 font-medium bg-blue-100 px-3 py-1 rounded-full">Mon–Fri, 9 AM–6 PM EST</p>
+                <p className="text-sm text-gray-500 font-medium">Mon–Fri, 9 AM–6 PM EST</p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-xl border-2 border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300">
-                <a href={`mailto:${company.email}`} className="flex items-center text-orange-700 hover:text-orange-800 transition-colors font-semibold text-lg">
-                  <Mail className="w-6 h-6 mr-3 text-orange-600" />
+              <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 min-w-[280px]">
+                <a href={`mailto:${company.email}`} className="flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors font-medium text-xl group">
+                  <Mail className="w-5 h-5 mr-3 text-gray-600 group-hover:text-blue-600 transition-colors" />
                   {company.email}
                 </a>
               </div>
