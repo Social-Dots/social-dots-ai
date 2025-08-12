@@ -5,8 +5,7 @@ export const company = {
   email: 'hello@socialdots.ca',
   siteUrl: 'https://socialdots.ca',
   social: {
-    twitterHandle: '@socialdots',
-    linkedin: 'https://www.linkedin.com/company/socialdots',
+    instagram: 'https://www.instagram.com/socialdots.ca/',
   },
   calendar: {
     url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0XVUI4MN2ep4PxV_FNEo2RwyEsE_qQTTyakkMLwGfvzrBJEEBQeEfQTxAGWtZZWHQ7DNrOAEJd?gv=true',

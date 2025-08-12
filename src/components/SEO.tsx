@@ -17,72 +17,37 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'WRLDS',
-  description = 'WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring.',
+  title = 'Social Dots - AI Business Solutions',
+  description = 'Transform your business with Social Dots AI solutions. From AI receptionists to automated workflows, we help Canadian SMBs work smarter with cutting-edge AI technology.',
   type = 'website',
-  name = 'WRLDS Technologies',
-  imageUrl = '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
+  name = 'Social Dots',
+  imageUrl = '/og-image.png',
   publishDate,
   modifiedDate,
   author,
   category,
-  keywords = ['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics'],
+  keywords = ['AI solutions canada', 'AI business automation', 'AI receptionist', 'digital transformation', 'AI chatbots', 'business AI tools', 'canadian AI services'],
   isBlogPost = false
 }) => {
   const location = useLocation();
-  const currentUrl = `https://wrlds.com${location.pathname}`;
-  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://wrlds.com${imageUrl}`;
-
-  // Enhanced keywords for specific posts
-  const enhancedKeywords = location.pathname.includes('smart-ppe-revolution') 
-    ? [
-        ...keywords,
-        'personal protective equipment',
-        'workplace safety solutions',
-        'smart safety gear',
-        'construction safety technology',
-        'industrial safety monitoring',
-        'occupational health technology',
-        'safety compliance',
-        'worker protection systems',
-        'smart hard hats',
-        'connected safety equipment'
-      ]
-    : location.pathname.includes('wearable-safety-tech-protecting-workers-roi')
-    ? [
-        ...keywords,
-        'workplace injury costs',
-        'safety ROI',
-        'workers compensation savings',
-        'ergonomic sensors',
-        'workplace safety investment',
-        'safety technology ROI',
-        'industrial wearables',
-        'safety cost reduction',
-        'occupational safety economics',
-        'safety technology partnerships',
-        'workplace injury statistics',
-        'safety equipment financing',
-        'injury prevention technology'
-      ]
-    : keywords;
+  const currentUrl = `https://socialdots.ca${location.pathname}`;
+  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://socialdots.ca${imageUrl}`;
 
   // Create base Organization JSON-LD structured data
   const organizationStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'WRLDS Technologies',
-    url: 'https://wrlds.com',
-    logo: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
-    description: 'Pioneering smart engineering solutions with textile sensors',
+    name: 'Social Dots',
+    url: 'https://socialdots.ca',
+    logo: 'https://socialdots.ca/lovable-uploads/12f05042-c8bf-4472-b1ce-f49cc51a0516.png',
+    description: 'AI Business Solutions for Canadian SMBs',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      email: 'info@wrlds.com'
+      email: 'info@socialdots.ca'
     },
     sameAs: [
-      'https://www.linkedin.com/company/wrlds-technologies',
-      'https://twitter.com/wrldstechnologies'
+      'https://www.instagram.com/socialdots.ca/'
     ]
   };
 
@@ -105,95 +70,31 @@ const SEO: React.FC<SEOProps> = ({
     dateModified: modifiedDate || publishDate,
     author: {
       '@type': 'Organization',
-      name: author || 'WRLDS Technologies',
-      url: 'https://wrlds.com'
+      name: author || 'Social Dots',
+      url: 'https://socialdots.ca'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'WRLDS Technologies',
+      name: 'Social Dots',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
+        url: 'https://socialdots.ca/lovable-uploads/12f05042-c8bf-4472-b1ce-f49cc51a0516.png',
         width: 512,
         height: 512
       },
-      url: 'https://wrlds.com'
+      url: 'https://socialdots.ca'
     },
     description: description,
-    keywords: enhancedKeywords.join(', '),
+    keywords: keywords.join(', '),
     articleSection: category,
     inLanguage: 'en-US',
     isAccessibleForFree: true
   } : null;
 
-  // Add FAQ structured data for Smart PPE post
-  const smartPPEFAQData = location.pathname.includes('smart-ppe-revolution') ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is Smart PPE?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Smart PPE (Personal Protective Equipment) refers to traditional safety gear enhanced with sensors, connectivity, and intelligence. Unlike ordinary PPE that acts as a passive barrier, smart PPE actively monitors conditions and provides real-time alerts to prevent accidents.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How does smart PPE improve workplace safety?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Smart PPE improves safety by providing real-time monitoring of environmental conditions, worker health metrics, and potential hazards. It can detect falls, monitor vital signs, sense toxic gases, and automatically alert emergency responders when needed.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What industries benefit from smart PPE?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Smart PPE benefits multiple industries including construction, manufacturing, oil & gas, fire & rescue, healthcare, mining, and any workplace where safety is paramount. Each industry can customize the technology to address specific safety challenges.'
-        }
-      }
-    ]
-  } : null;
-
-  // Add FAQ structured data for Wearable Safety Tech ROI post
-  const wearableSafetyROIFAQData = location.pathname.includes('wearable-safety-tech-protecting-workers-roi') ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How much do workplace injuries cost?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'According to the National Safety Council, the average cost for a medically consulted work injury is $43,000 in 2023. With 2.2 injuries per 100 full-time workers, a 200-person site can expect about $215,000 in injury costs annually before accounting for downtime or replacement training.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What ROI can wearable safety technology deliver?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Real-world deployments show significant returns: one study found 54% lower OSHA recordables and 88% fewer lost workdays. Another warehouse study showed 62% of workers reduced risky movements by half, with total ergonomic hazards falling 39%.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do insurance companies support wearable safety technology?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, many insurers now bundle wearable device costs into workers compensation premiums. Employers keep the hardware as long as usage stays high because fewer claims leave insurers ahead financially. Regional carriers are expanding similar rebate schemes.'
-        }
-      }
-    ]
-  } : null;
-
   // Combine keywords with any additional category terms
   const keywordString = category 
-    ? [...enhancedKeywords, category.toLowerCase()].join(', ') 
-    : enhancedKeywords.join(', ');
+    ? [...keywords, category.toLowerCase()].join(', ')
+    : keywords.join(', ');
 
   return (
     <Helmet>
@@ -211,12 +112,12 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image" content={absoluteImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="WRLDS Technologies" />
+      <meta property="og:site_name" content="Social Dots" />
       <meta property="og:locale" content="en_US" />
       {isBlogPost && category && <meta property="article:section" content={category} />}
       {isBlogPost && publishDate && <meta property="article:published_time" content={publishDate} />}
       {isBlogPost && modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
-      {isBlogPost && <meta property="article:publisher" content="https://wrlds.com" />}
+      {isBlogPost && <meta property="article:publisher" content="https://socialdots.ca" />}
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -224,8 +125,6 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={absoluteImageUrl} />
-      <meta name="twitter:site" content="@wrldstechnologies" />
-      <meta name="twitter:creator" content="@wrldstechnologies" />
       
       {/* LinkedIn specific */}
       <meta property="og:image:secure_url" content={absoluteImageUrl} />
@@ -247,18 +146,6 @@ const SEO: React.FC<SEOProps> = ({
       {blogPostStructuredData && (
         <script type="application/ld+json">
           {JSON.stringify(blogPostStructuredData)}
-        </script>
-      )}
-      
-      {smartPPEFAQData && (
-        <script type="application/ld+json">
-          {JSON.stringify(smartPPEFAQData)}
-        </script>
-      )}
-      
-      {wearableSafetyROIFAQData && (
-        <script type="application/ld+json">
-          {JSON.stringify(wearableSafetyROIFAQData)}
         </script>
       )}
     </Helmet>

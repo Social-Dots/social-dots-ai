@@ -2,7 +2,6 @@
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
 
-import Projects from '@/components/Projects';
 import WhySocialDots from '@/components/WhySocialDots';
 
 import SEO from '@/components/SEO';
@@ -144,9 +143,6 @@ const Index = () => {
       
       {/* Customer Testimonials */}
       <TestimonialDisplay />
-      
-      {/* Latest Projects Preview */}
-      <Projects />
       
       
       </PageLayout>
