@@ -11,6 +11,7 @@ import { Progress } from "@/components/ui/progress";
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Button } from "@/components/ui/button";
 import { useScrollHijack } from '@/hooks/useScrollHijack';
+import { company } from "@/config/company";
 
 const Features = () => {
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -49,6 +50,11 @@ const Features = () => {
   ];
 
   const { isHijacked, currentIndex } = useScrollHijack(hijackSectionRef, features.length);
+
+  const handleTalkToAgent = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = `tel:${company.phoneE164}`;
+  };
 
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -443,7 +449,7 @@ const Features = () => {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               
-              <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-social-dots-blue hover:bg-social-dots-blue/90 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
+              <Button onClick={handleTalkToAgent} className="inline-flex items-center px-4 sm:px-6 py-3 bg-social-dots-blue hover:bg-social-dots-blue/90 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
                 Talk to AI Agent
                 <MessageSquare className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               </Button>

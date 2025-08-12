@@ -111,7 +111,7 @@ const Index = () => {
               viewport={{ once: true }}
               className="animate-dot-pulse"
             >
-              <div className="text-4xl font-bold text-social-dots-blue mb-2">50+</div>
+              <div className="text-4xl font-bold text-social-dots-blue mb-2">10+</div>
               <div className="text-gray-600">Businesses Automated</div>
             </motion.div>
             <motion.div

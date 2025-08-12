@@ -145,12 +145,6 @@ const WhySocialDots = () => {
             </motion.div>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="text-center mt-10">
-            <Link to="/development-process" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group">
-              Learn more about our structured development process
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
         </motion.div>
       </div>
     </section>;

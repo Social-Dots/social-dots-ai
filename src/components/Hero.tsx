@@ -3,6 +3,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { company } from "@/config/company";
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -33,14 +34,9 @@ const Hero = () => {
     }
   };
   
-  const scrollToContact = (e: React.MouseEvent) => {
+  const handleTalkToAgent = (e: React.MouseEvent) => {
     e.preventDefault();
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+    window.location.href = `tel:${company.phoneE164}`;
   };
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
@@ -67,7 +63,7 @@ const Hero = () => {
                 <div className="text-center">
                   <button 
                     className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
-                    onClick={scrollToContact}
+                    onClick={handleTalkToAgent}
                   >
                     Talk to AI Agent
                     <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />

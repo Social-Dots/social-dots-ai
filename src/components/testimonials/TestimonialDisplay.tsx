@@ -47,9 +47,9 @@ export const TestimonialDisplay: React.FC = () => {
       const mockTestimonials = [
         {
           id: '1',
-          name: 'Sarah Johnson',
-          company: 'TechCorp Inc.',
-          role: 'CEO',
+          name: 'Sarah',
+          company: 'The Hair Studio',
+          role: '',
           content: 'Social Dots transformed our customer service with their AI concierge. We\'ve seen a 50% reduction in response time and our customers love the 24/7 availability.',
           rating: 5,
           photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
@@ -58,10 +58,10 @@ export const TestimonialDisplay: React.FC = () => {
         },
         {
           id: '2',
-          name: 'Mike Chen',
+          name: 'Anas Ahmed',
           company: 'Digital Solutions',
-          role: 'Operations Manager',
-          content: 'The AI business assistant has automated so many of our routine tasks. It\'s like having a super-efficient team member who never sleeps.',
+          role: '',
+          content: 'AI business assistant ne hamari routine tasks ko automate kar diya hai. Yeh bilkul aise hai jaise hamare paas ek super-efficient team member ho jo kabhi sota nahi.',
           rating: 5,
           photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
           metrics: '80% time saved on admin tasks',
@@ -69,9 +69,9 @@ export const TestimonialDisplay: React.FC = () => {
         },
         {
           id: '3',
-          name: 'Lisa Rodriguez',
-          company: 'Growth Marketing Co.',
-          role: 'Marketing Director',
+          name: 'Lisa',
+          company: 'Maple Leaf Bistro',
+          role: '',
           content: 'Their lead generation AI has been incredible. We\'ve tripled our qualified leads while reducing our marketing costs significantly.',
           rating: 5,
           photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
@@ -126,7 +126,7 @@ export const TestimonialDisplay: React.FC = () => {
             Customer Success Stories
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Trusted by Canadian Businesses
+            Trusted by Businesses Worldwide
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             See how our AI solutions are helping businesses work smarter and grow faster
@@ -161,7 +161,7 @@ export const TestimonialDisplay: React.FC = () => {
                     )}
                     <div>
                       <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-600">{testimonial.role}</p>
+                      {testimonial.role && <p className="text-sm text-gray-600">{testimonial.role}</p>}
                       <p className="text-sm text-social-dots-blue font-medium">{testimonial.company}</p>
                     </div>
                   </div>

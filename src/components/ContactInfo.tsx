@@ -36,7 +36,7 @@ const ContactInfo = () => {
                       {company.phonePretty}
                     </a>
                     <p className="text-xs text-gray-500 mt-1">
-                      Mon–Fri, 9 AM–6 PM
+                      24x7
                     </p>
                   </div>
                 </div>

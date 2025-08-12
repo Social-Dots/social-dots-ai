@@ -2,6 +2,7 @@
 import { MessageSquare } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { company } from "@/config/company";
 
 const FloatingContactButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,12 +24,7 @@ const FloatingContactButton = () => {
   
   const handleAIAgentClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+    window.location.href = `tel:${company.phoneE164}`;
   };
   
   if (!isVisible) return null;
