@@ -8,7 +8,8 @@
       "Bash(npm install)",
       "Bash(git add:*)",
       "Bash(git merge:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
