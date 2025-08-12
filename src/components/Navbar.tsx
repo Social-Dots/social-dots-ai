@@ -153,21 +153,6 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <RouterLink to="/blog" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Blog
-                    </RouterLink>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <RouterLink to="/careers" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Careers
-                    </RouterLink>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                   {user ? (
@@ -238,20 +223,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
             Portfolio
-          </RouterLink>
-          
-          <RouterLink to="/blog" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Blog
-          </RouterLink>
-          
-          <RouterLink to="/careers" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Careers
           </RouterLink>
           
           {user ? (
