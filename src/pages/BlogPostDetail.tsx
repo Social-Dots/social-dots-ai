@@ -5,7 +5,7 @@ import PageLayout from '@/components/PageLayout';
 import SEO from '@/components/SEO';
 import EnhancedBlogContent from '@/components/EnhancedBlogContent';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Calendar, User } from 'lucide-react';
+import { ArrowLeft, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogPostDetail = () => {
@@ -37,7 +37,7 @@ const BlogPostDetail = () => {
         imageUrl={post.imageUrl}
         keywords={post.keywords}
         isBlogPost={true}
-        publishDate={new Date(post.date).toISOString()}
+        publishDate={post.date ? new Date(post.date).toISOString() : undefined}
         author={post.author}
         category={post.category}
         type="article"
@@ -53,7 +53,7 @@ const BlogPostDetail = () => {
               className="absolute inset-0 w-full h-full object-cover filter grayscale"
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-800/60 to-blue-900/80"></div>
           
           <div className="banner-overlay">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center justify-start md:justify-center">
@@ -68,23 +68,11 @@ const BlogPostDetail = () => {
                   {post.title}
                 </h1>
                 
-                {/* Compact mobile metadata */}
-                <div className="flex flex-col gap-3 text-gray-300 mb-4 sm:mb-6">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start md:justify-center gap-2 sm:gap-6">
-                    <div className="flex items-center text-xs sm:text-base">
-                      <Calendar className="mr-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                      <span>{post.date}</span>
-                    </div>
-                    <div className="flex items-center text-xs sm:text-base">
-                      <User className="mr-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                      <span>{post.author}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-start md:justify-center">
-                    <div className="px-3 py-1 sm:px-4 sm:py-2 bg-white/15 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium border border-white/20">
-                      {post.category}
-                    </div>
+                {/* Author info only */}
+                <div className="flex justify-start md:justify-center mb-4 sm:mb-6">
+                  <div className="flex items-center text-gray-300 text-xs sm:text-base">
+                    <User className="mr-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                    <span>{post.author}</span>
                   </div>
                 </div>
                 
@@ -98,7 +86,7 @@ const BlogPostDetail = () => {
         </div>
 
         {/* Article Content */}
-        <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+        <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto">
             <EnhancedBlogContent content={post.content} />
           </div>
