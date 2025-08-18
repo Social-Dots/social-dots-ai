@@ -7,11 +7,11 @@ const FireCatProject = () => {
     <ProjectPageLayout
       title="FireCat's 6th SENSE"
       subtitle="Advanced safety system for high-risk environments"
-      imageUrl="/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png"
+      imageUrl="/firecat-project.jpg"
       brandName="FireCat Group"
       darkMode={true}
     >
-      <h2 className="text-3xl font-bold mb-6">Case Study: FireCat's 6th SENSE by WRLDS Technologies</h2>
+      <h2 className="text-3xl font-bold mb-6">Case Study: FireCat's 6th SENSE by Social Dots</h2>
       
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
         <h3 className="text-xl font-semibold mb-2">Background</h3>
@@ -31,7 +31,7 @@ const FireCatProject = () => {
       
       <h3 className="text-2xl font-semibold mb-4 mt-8">Solution</h3>
       <p>
-        WRLDS Technologies provided an end-to-end solution called the 6th SENSE, combining sophisticated AI-driven 
+        Social Dots provided an end-to-end solution called the 6th SENSE, combining sophisticated AI-driven 
         sensors seamlessly integrated into uniforms. The solution features:
       </p>
       
@@ -123,7 +123,7 @@ const FireCatProject = () => {
       <h3 className="text-2xl font-semibold mb-4 mt-8">Outcome</h3>
       <p>
         FireCat successfully implemented the 6th SENSE solution, significantly enhancing situational awareness, 
-        safety, and operational efficiency of high-risk personnel. WRLDS' innovative platform and specialized 
+        safety, and operational efficiency of high-risk personnel. Social Dots' innovative platform and specialized 
         knowledge allowed for rapid deployment, immediate positive impact, and a scalable model for future expansions.
       </p>
     </ProjectPageLayout>

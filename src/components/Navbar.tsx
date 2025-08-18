@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src="/lovable-uploads/9667e677-d067-4aae-a0f1-b7bf323faa93.png" 
+                src="/social-dots-logo.png" 
                 alt="Social Dots Logo" 
                 className="h-10 w-auto object-contain"
                 loading="eager"
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[420px]">
                       <li>
-                        <RouterLink to="/services" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                        <RouterLink to="/#services" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">All Services</div>
                           <p className="text-sm text-gray-500">Explore everything we offer</p>
                         </RouterLink>
@@ -124,7 +124,7 @@ const Navbar = () => {
                         </RouterLink>
                       </li>
                       <li>
-                        <RouterLink to="/services/ai-support-agent" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                        <RouterLink to="/services/ai-business-assistant" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">AI Support Agent</div>
                           <p className="text-sm text-gray-500">24/7 support with human handoff</p>
                         </RouterLink>
@@ -225,9 +225,9 @@ const Navbar = () => {
           </RouterLink>
           
           {/* Services */}
-          <RouterLink to="/services" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          <RouterLink to="/#services" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
-            window.scrollTo(0, 0);
+            scrollToSection('services');
           }}>
             Services
           </RouterLink>

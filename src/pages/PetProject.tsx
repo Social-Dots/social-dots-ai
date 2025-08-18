@@ -7,7 +7,7 @@ const PetProject = () => {
     <ProjectPageLayout
       title="Dog Activity Counter"
       subtitle="Smart monitoring for canine health and insurance"
-      imageUrl="/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png"
+      imageUrl="/pet-project.jpg"
       brandName="UK Insurance Giant"
     >
       <div className="bg-green-50 p-4 rounded-lg mb-6 flex items-center">
@@ -36,7 +36,7 @@ const PetProject = () => {
       
       <h3 className="text-2xl font-semibold mb-4 mt-8">Solution</h3>
       <p>
-        WRLDS Technologies developed a specialized smart collar system that incorporates:
+        Social Dots developed a specialized smart collar system that incorporates:
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">

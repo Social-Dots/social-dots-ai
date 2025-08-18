@@ -8,11 +8,11 @@ const SportRetailProject = () => {
     <ProjectPageLayout
       title="Performance Athletic Footwear"
       subtitle="Revolutionary R&D for next-generation athletic footwear"
-      imageUrl="/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png"
+      imageUrl="/sports-project.jpg"
       brandName="Global Sports Retail Leader"
     >
       <SEO 
-        title="WRLDS - Performance Athletic Footwear Project" 
+        title="Social Dots - Performance Athletic Footwear Project" 
         description="Revolutionary R&D for next-generation athletic footwear with embedded textile sensors for real-time performance analytics and personalized footwear."
         type="article"
       />
@@ -27,7 +27,7 @@ const SportRetailProject = () => {
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
         <h3 className="text-xl font-semibold mb-2">Background</h3>
         <p>
-          A global sports retail leader approached WRLDS Technologies with a vision to revolutionize the development, 
+          A global sports retail leader approached Social Dots with a vision to revolutionize the development, 
           fitting, and testing of athletic footwear. Their goal was to create a data-driven approach to footwear design 
           that would enhance athlete performance while reducing development cycles.
         </p>
@@ -43,7 +43,7 @@ const SportRetailProject = () => {
       
       <h3 className="text-2xl font-semibold mb-4 mt-8">Solution</h3>
       <p>
-        WRLDS Technologies developed a comprehensive smart footwear R&D platform that includes:
+        Social Dots developed a comprehensive smart footwear R&D platform that includes:
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -101,7 +101,7 @@ const SportRetailProject = () => {
         <div>
           <h4 className="text-lg font-semibold mb-2 text-gray-700">Development Roadmap</h4>
           <p>
-            WRLDS Technologies continues to partner with this client on this R&D initiative to refine the prototype and 
+            Social Dots continues to partner with this client on this R&D initiative to refine the prototype and 
             develop potential consumer versions of this technology, which could enable everyday athletes to benefit 
             from professional-grade footwear analysis and recommendations.
           </p>

@@ -7,7 +7,7 @@ const HockeyProject = () => {
     <ProjectPageLayout
       title="Ice Hockey Elite Skill Tracker"
       subtitle="Advanced motion analysis for optimal performance"
-      imageUrl="/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png"
+      imageUrl="/hockey-project.jpg"
       brandName="Mars Blades"
     >
       <h2 className="text-3xl font-bold mb-6">Case Study: Hockey Performance Analysis System</h2>
@@ -17,7 +17,7 @@ const HockeyProject = () => {
         <p>
           Mars Blades, a leading innovator in hockey training equipment, sought to develop a system for 
           quantifying and analyzing the specific movements that contribute to elite hockey performance. They approached 
-          WRLDS Technologies to create a solution that could capture detailed metrics during real skating sessions and 
+          Social Dots to create a solution that could capture detailed metrics during real skating sessions and 
           translate that data into actionable insights for player development.
         </p>
       </div>
@@ -32,7 +32,7 @@ const HockeyProject = () => {
       
       <h3 className="text-2xl font-semibold mb-4 mt-8">Solution</h3>
       <p>
-        WRLDS Technologies developed a specialized single-point IMU (Inertial Measurement Unit) system embedded directly 
+        Social Dots developed a specialized single-point IMU (Inertial Measurement Unit) system embedded directly 
         in hockey footwear that could:
       </p>
       

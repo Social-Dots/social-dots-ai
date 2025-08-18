@@ -29,7 +29,7 @@ const demoVideos: DemoVideo[] = [
     duration: '2:30',
     category: 'AI Services',
     thumbnailUrl: '/hero-ai-customer-service.jpg',
-    videoUrl: '/lovable-uploads/video_1751292840840_1751292842546.mp4',
+    videoUrl: '/demo-video-concierge.mp4',
     features: ['Natural Language Processing', '24/7 Availability', 'Multi-language Support', 'CRM Integration']
   },
   {

@@ -108,7 +108,7 @@ const TechDetails = () => {
                 </div>
                 
                 <p className="text-gray-600 mb-8 text-base max-w-3xl">
-                  At WRLDS, we've developed a systematic approach to creating smart textile solutions that combines technical innovation with practical implementation. 
+                  At Social Dots, we've developed a systematic approach to creating AI business solutions that combines technical innovation with practical implementation. 
                   Our comprehensive development process ensures that every project moves efficiently from concept to market-ready product.
                 </p>
                 

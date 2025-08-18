@@ -32,7 +32,7 @@ const BlogPostDetail = () => {
   return (
     <PageLayout>
       <SEO 
-        title={`${post.title} - WRLDS`}
+        title={`${post.title} - Social Dots`}
         description={post.metaDescription || post.excerpt}
         imageUrl={post.imageUrl}
         keywords={post.keywords}

@@ -14,7 +14,7 @@ const Blog = () => {
       <SEO 
         title="Social Dots - Latest Updates on AI Solutions" 
         description="Stay updated with the latest news and insights about AI automation, voice agents, and digital solutions from Social Dots."
-        imageUrl="/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png"
+        imageUrl="/blog-social-image.jpg"
         keywords={['AI automation', 'voice agents', 'digital solutions', 'business automation', 'AI technology', 'smart business']}
         type="website"
       />
@@ -52,7 +52,7 @@ const Blog = () => {
                     key={post.id}
                     title={post.title}
                     excerpt={post.excerpt}
-                    imageUrl={post.imageUrl || '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png'}
+                    imageUrl={post.imageUrl || '/blog-default-image.jpg'}
                     date={post.date}
                     slug={post.slug}
                     category={post.category}
@@ -70,7 +70,7 @@ const Blog = () => {
                         key={post.id}
                         title={post.title}
                         excerpt={post.excerpt}
-                        imageUrl={post.imageUrl || '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png'}
+                        imageUrl={post.imageUrl || '/blog-default-image.jpg'}
                         date={post.date}
                         slug={post.slug}
                         category={post.category}

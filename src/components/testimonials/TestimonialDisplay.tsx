@@ -48,8 +48,11 @@ export const TestimonialDisplay: React.FC = () => {
         {
           id: '1',
           name: 'Sarah',
+
           company: 'The Hair Studio',
           role: '',
+
+
           content: 'Social Dots transformed our customer service with their AI concierge. We\'ve seen a 50% reduction in response time and our customers love the 24/7 availability.',
           rating: 5,
           photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',

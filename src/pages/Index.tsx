@@ -70,7 +70,7 @@ const Index = () => {
           <SEO
         title="Social Dots - AI-Powered Digital Solutions for Canadian Businesses" 
         description="Transform your business with Social Dots AI solutions. From AI receptionists to automated workflows, we help Canadian SMBs work smarter with cutting-edge AI technology."
-        imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
+        imageUrl="/social-dots-og-image.png"
         keywords={['AI solutions canada', 'AI business automation', 'AI receptionist', 'digital transformation', 'AI chatbots', 'business AI tools', 'canadian AI services']}
       />
       
