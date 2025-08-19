@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 pb-12">
           <div className="lg:col-span-2">
             <img 
-              src="/lovable-uploads/36cf5468-4d64-4c35-9d46-27ee9ad56720.png" 
+              src="https://res.cloudinary.com/dsmgydskc/image/upload/v1751909635/svg_zacw0e.svg" 
               alt="Social Dots Logo" 
               className="h-40 w-auto mb-8 object-contain"
               loading="lazy"
