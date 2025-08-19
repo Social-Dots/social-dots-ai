@@ -88,7 +88,7 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-black hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-70 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
