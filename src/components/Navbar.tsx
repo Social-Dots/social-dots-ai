@@ -73,7 +73,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <RouterLink to="/" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <RouterLink to="/" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-black hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Home
                     </RouterLink>
                   </NavigationMenuLink>
@@ -81,14 +81,14 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <RouterLink to="/about" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <RouterLink to="/about" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-black hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       About Us
                     </RouterLink>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-black hover:text-white bg-transparent hover:bg-gray-800")}>
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -147,7 +147,7 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <RouterLink to="/portfolio" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <RouterLink to="/portfolio" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-black hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Portfolio
                     </RouterLink>
                   </NavigationMenuLink>
@@ -155,7 +155,7 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <RouterLink to="/blog" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <RouterLink to="/blog" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-black hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Blog
                     </RouterLink>
                   </NavigationMenuLink>
@@ -163,7 +163,7 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <RouterLink to="/careers" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <RouterLink to="/careers" className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-black hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Careers
                     </RouterLink>
                   </NavigationMenuLink>
