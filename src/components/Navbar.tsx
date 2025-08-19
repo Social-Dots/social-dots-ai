@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <RouterLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src="/social-dots-logo.png" 
+                src="https://res.cloudinary.com/dsmgydskc/image/upload/v1751909635/svg_zacw0e.svg" 
                 alt="Social Dots Logo" 
                 className="h-10 w-auto object-contain"
                 loading="eager"
