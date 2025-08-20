@@ -56,7 +56,7 @@ const Navbar = () => {
               <img 
                 src="https://res.cloudinary.com/dsmgydskc/image/upload/v1751909635/svg_zacw0e.svg" 
                 alt="Social Dots Logo" 
-                className="h-10 w-auto object-contain"
+                className={cn("h-10 w-auto object-contain", !isScrolled && "invert brightness-200")}
                 loading="eager"
                 decoding="sync"
               />

@@ -15,6 +15,11 @@ import WorkwearProject from "./pages/WorkwearProject";
 import HockeyProject from "./pages/HockeyProject";
 import PetProject from "./pages/PetProject";
 import AICustomerService from "./pages/portfolio/AICustomerService";
+import AIThumbnailGenerator from "./pages/portfolio/AIThumbnailGenerator";
+import AIFakeListingTester from "./pages/portfolio/AIFakeListingTester";
+import AIBusinessHub from "./pages/portfolio/AIBusinessHub";
+import CricketCadets from "./pages/portfolio/CricketCadets";
+import AIVoiceAgent from "./pages/portfolio/AIVoiceAgent";
 import TechDetails from "./pages/TechDetails";
 import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
@@ -29,6 +34,10 @@ import WebServices from "./pages/WebServices";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import EcommerceGrowth from "./pages/portfolio/EcommerceGrowth";
+import SocialMediaAutomation from "./pages/portfolio/SocialMediaAutomation";
+import LeadGeneration from "./pages/portfolio/LeadGeneration";
+import ProcessAutomation from "./pages/portfolio/ProcessAutomation";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -49,6 +58,15 @@ const App = () => {
             <Route path="/projects/hockey" element={<HockeyProject />} />
             <Route path="/projects/pet-tracker" element={<PetProject />} />
             <Route path="/portfolio/ai-customer-service" element={<AICustomerService />} />
+            <Route path="/portfolio/ecommerce-growth" element={<EcommerceGrowth />} />
+            <Route path="/portfolio/social-media-automation" element={<SocialMediaAutomation />} />
+            <Route path="/portfolio/lead-generation" element={<LeadGeneration />} />
+            <Route path="/portfolio/process-automation" element={<ProcessAutomation />} />
+            <Route path="/portfolio/ai-thumbnail-generator" element={<AIThumbnailGenerator />} />
+            <Route path="/portfolio/ai-fake-listing-tester" element={<AIFakeListingTester />} />
+            <Route path="/portfolio/ai-business-hub" element={<AIBusinessHub />} />
+            <Route path="/portfolio/cricket-cadets" element={<CricketCadets />} />
+            <Route path="/portfolio/ai-voice-agent" element={<AIVoiceAgent />} />
             <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/development-process" element={<DevelopmentProcess />} />
             <Route path="/services/ai-concierge" element={<AIConcierge />} />

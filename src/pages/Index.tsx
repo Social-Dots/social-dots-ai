@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 
 import Projects from '@/components/Projects';
 import WhySocialDots from '@/components/WhySocialDots';
+import { Services } from '@/components/Services';
 
 import SEO from '@/components/SEO';
 import SocialDotsLogo from '@/components/SocialDotsLogo';
@@ -141,6 +142,9 @@ const Index = () => {
       
       {/* Social Dots Advantage */}
       <WhySocialDots />
+      
+      {/* Services Section */}
+      <Services />
       
       {/* Customer Testimonials */}
       <TestimonialDisplay />

@@ -48,14 +48,11 @@ export const TestimonialDisplay: React.FC = () => {
         {
           id: '1',
           name: 'Sarah',
-
           company: 'The Hair Studio',
-          role: '',
-
-
+          role: 'Owner',
           content: 'Social Dots transformed our customer service with their AI concierge. We\'ve seen a 50% reduction in response time and our customers love the 24/7 availability.',
           rating: 5,
-          photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
+          photo_url: '/placeholder.svg',
           metrics: '50% faster response time',
           is_featured: true,
         },
@@ -63,10 +60,10 @@ export const TestimonialDisplay: React.FC = () => {
           id: '2',
           name: 'Anas Ahmed',
           company: 'Digital Solutions',
-          role: '',
+          role: 'CEO',
           content: 'AI business assistant ne hamari routine tasks ko automate kar diya hai. Yeh bilkul aise hai jaise hamare paas ek super-efficient team member ho jo kabhi sota nahi.',
           rating: 5,
-          photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
+          photo_url: '/placeholder.svg',
           metrics: '80% time saved on admin tasks',
           is_featured: true,
         },
@@ -74,10 +71,10 @@ export const TestimonialDisplay: React.FC = () => {
           id: '3',
           name: 'Lisa',
           company: 'Maple Leaf Bistro',
-          role: '',
+          role: 'Manager',
           content: 'Their lead generation AI has been incredible. We\'ve tripled our qualified leads while reducing our marketing costs significantly.',
           rating: 5,
-          photo_url: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
+          photo_url: '/placeholder.svg',
           metrics: '300% increase in qualified leads',
           is_featured: true,
         }
@@ -156,11 +153,23 @@ export const TestimonialDisplay: React.FC = () => {
                   
                   <div className="flex items-center space-x-4">
                     {testimonial.photo_url && (
-                      <img
-                        src={testimonial.photo_url}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img
+                          src={testimonial.photo_url}
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = '/placeholder.svg';
+                          }}
+                        />
+                      </div>
+                    )}
+                    {!testimonial.photo_url && (
+                      <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+                        <span className="text-gray-600 font-semibold text-sm">
+                          {testimonial.name.charAt(0).toUpperCase()}
+                        </span>
+                      </div>
                     )}
                     <div>
                       <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
