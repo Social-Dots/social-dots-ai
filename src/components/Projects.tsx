@@ -14,7 +14,7 @@ const projects = [
     tags: ["AI Automation", "Customer Service", "Cost Reduction", "24/7 Support"],
     imageUrl: "/ai-call-center-automation.jpg",
     isFeatured: true,
-    link: "/portfolio/ai-customer-service",
+    link: "/portfolio/socialdots/ai-customer-service",
     details: `
       A growing Canadian restaurant chain needed to scale their customer service without increasing staff costs. Social Dots implemented an AI-powered customer service system with intelligent chatbots, automated order tracking, and smart routing for complex queries. Results: 60% reduction in call center costs, 24/7 availability, 80% query resolution rate, and improved customer satisfaction scores.
     `
@@ -26,7 +26,7 @@ const projects = [
     description: "Complete digital transformation including custom website, inventory management, and automated marketing that increased online sales by 300%.",
     tags: ["E-commerce", "Digital Transformation", "Marketing Automation", "Sales Growth"],
     imageUrl: "/web-development-ai.jpg",
-    link: "/portfolio/ecommerce-growth"
+    link: "/portfolio/socialdots/ecommerce-growth"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     description: "AI-powered content creation and scheduling system that manages social media across 50+ client accounts with automated engagement and analytics.",
     tags: ["Social Media", "AI Content", "Automation", "Client Management"],
     imageUrl: "/social-media-ai.jpg",
-    link: "/portfolio/social-media-automation"
+    link: "/portfolio/socialdots/social-media-automation"
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
     description: "Custom CRM integration with automated lead scoring, email sequences, and conversion tracking that doubled qualified leads in 3 months.",
     tags: ["Lead Generation", "CRM Integration", "Email Automation", "Conversion Tracking"],
     imageUrl: "/digital-marketing-ai.jpg",
-    link: "/portfolio/lead-generation"
+    link: "/portfolio/socialdots/lead-generation"
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const projects = [
     description: "Comprehensive workflow automation including document processing, client onboarding, and reporting that saved 20 hours per week of manual work.",
     tags: ["Process Automation", "Workflow Optimization", "Document Processing", "Time Savings"],
     imageUrl: "/business-automation-ai.jpg",
-    link: "/portfolio/process-automation"
+    link: "/portfolio/socialdots/process-automation"
   }
 ];
 

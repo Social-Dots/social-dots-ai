@@ -163,53 +163,71 @@ const CricketCadets = () => {
     <PageLayout showContact={false}>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] bg-gradient-to-br from-green-600 via-emerald-500 to-teal-500 overflow-hidden">
+        <section className="relative min-h-[80vh] bg-gradient-to-br from-green-600 via-emerald-500 to-teal-500 overflow-hidden">
           <DotsPattern animated={true} className="opacity-20" />
           <div className="absolute inset-0 bg-black/20"></div>
           
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-            <div className="max-w-4xl">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-white"
-              >
-                <Button
-                  variant="ghost"
-                  className="mb-6 text-white hover:text-white hover:bg-white/20"
-                  onClick={() => navigate(-1)}
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div className="max-w-4xl">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-white"
                 >
-                  <ArrowLeft className="mr-2 w-4 h-4" />
-                  Back to Portfolio
-                </Button>
-                
-                <Badge className="mb-4 bg-white/20 text-white border-white/30">
-                  Sports Coaching Platform
-                </Badge>
-                
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  Cricket Cadets
-                  <span className="block text-2xl md:text-3xl font-normal mt-2 opacity-90">
-                    AI-Powered Cricket Coaching
-                  </span>
-                </h1>
-                
-                <p className="text-xl md:text-2xl text-green-100 mb-8">
-                  AI sports coaching platform with video analysis, personalized training, and global talent discovery for 50,000+ young athletes worldwide.
-                </p>
-                
-                <div className="flex flex-wrap gap-4">
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                    Video Analysis
+                  <Button
+                    variant="ghost"
+                    className="mb-6 text-white hover:text-white hover:bg-white/20"
+                    onClick={() => navigate(-1)}
+                  >
+                    <ArrowLeft className="mr-2 w-4 h-4" />
+                    Back to Portfolio
+                  </Button>
+                  
+                  <Badge className="mb-4 bg-white/20 text-white border-white/30">
+                    Sports Coaching Platform
                   </Badge>
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                    Global Talent
-                  </Badge>
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                    Mobile App
-                  </Badge>
-                </div>
+                  
+                  <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Cricket Cadets
+                    <span className="block text-2xl md:text-3xl font-normal mt-2 opacity-90">
+                      AI-Powered Cricket Coaching
+                    </span>
+                  </h1>
+                  
+                  <p className="text-xl md:text-2xl text-green-100 mb-8">
+                    AI sports coaching platform with video analysis, personalized training, and global talent discovery for 50,000+ young athletes worldwide.
+                  </p>
+                
+                  <div className="flex flex-wrap gap-4">
+                    <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                      Video Analysis
+                    </Badge>
+                    <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                      Global Talent
+                    </Badge>
+                    <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                      Mobile App
+                    </Badge>
+                  </div>
+                </motion.div>
+              </div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+              >
+                <iframe
+                  src="https://www.cricketcadets.ca/"
+                  className="w-full h-full border-0"
+                  title="Live Preview - Cricket Cadets"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </motion.div>
             </div>
           </div>

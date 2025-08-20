@@ -19,62 +19,62 @@ const Portfolio = () => {
   }, []);
 
   const portfolioItems = [
-    {
-      id: 1,
-      title: "AI Thumbnail Generator",
-      brand: "Content Teams",
-      description: "Automated, branded thumbnails generated from titles and keywords to boost CTR and production speed.",
-      tags: ["AI Automation", "Brand Kit", "YouTube", "Batch"],
-      imageUrl: "/social-media-ai.jpg",
-      results: ["10x Faster Production", "Brand Consistency", "CTR Uplift"],
-      link: "/portfolio/ai-thumbnail-generator",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "AI Fake Listing Tester",
-      brand: "Marketplaces",
-      description: "AI detects fake or low-quality listings across marketplaces with scoring and evidence.",
-      tags: ["Trust & Safety", "Computer Vision", "NLP", "Moderation"],
-      imageUrl: "/digital-marketing-ai.jpg",
-      results: ["Reduced Fraud", "Buyer Confidence", "Less Manual Review"],
-      link: "/portfolio/ai-fake-listing-tester",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "AI Business Hub",
-      brand: "SMBs",
-      description: "Centralized AI workflows for lead intake, routing, docs, and analytics across your tools.",
-      tags: ["Automation", "CRM", "Docs", "Slack"],
-      imageUrl: "/business-automation-ai.jpg",
-      results: ["60–80% Admin Offloaded", "Faster SLAs", "Weekly Insights"],
-      link: "/portfolio/ai-business-hub",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "AI Voice Agent",
-      brand: "Sales & Support",
-      description: "Inbound/outbound AI voice for lead capture, booking, and triage with human handoff.",
-      tags: ["Voice", "Scheduling", "CRM", "After-hours"],
-      imageUrl: "/ai-call-center-automation.jpg",
-      results: ["Higher Booking Rate", "24/7 Coverage", "Unified Leads"],
-      link: "/portfolio/ai-voice-agent",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Cricket Cadets",
-      brand: "CricketCadets.ca",
-      description: "Website + AI concierge for a cricket coaching academy: bookings and parent FAQs.",
-      tags: ["Web", "AI Concierge", "Scheduling", "Airtable"],
-      imageUrl: "/web-development-ai.jpg",
-      results: ["More Trial Sign-ups", "Faster Responses", "Reduced Admin"],
-      link: "/portfolio/cricket-cadets",
-      featured: false
-    }
-  ];
+  {
+    id: 1,
+    title: "AI Thumbnail Generator",
+    brand: "YouTube Creators",
+    description: "AI generates eye-catching thumbnails from video content with brand consistency, boosting click-through rates.",
+    tags: ["AI Design", "YouTube", "Automation", "CTR Optimization"],
+    imageUrl: "/digital-marketing-ai.jpg",
+    results: ["+30% CTR", "Brand Consistency", "Time Savings"],
+    link: "/portfolio/socialdots/ai-thumbnail-generator",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "AI Fake Listing Tester",
+    brand: "Marketplaces",
+    description: "AI detects fake or low-quality listings across marketplaces with scoring and evidence.",
+    tags: ["Trust & Safety", "Computer Vision", "NLP", "Moderation"],
+    imageUrl: "/digital-marketing-ai.jpg",
+    results: ["Reduced Fraud", "Buyer Confidence", "Less Manual Review"],
+    link: "/portfolio/socialdots/ai-fake-listing-tester",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "AI Business Hub",
+    brand: "SMBs",
+    description: "Centralized AI workflows for lead intake, routing, docs, and analytics across your tools.",
+    tags: ["Automation", "CRM", "Docs", "Slack"],
+    imageUrl: "/business-automation-ai.jpg",
+    results: ["60–80% Admin Offloaded", "Faster SLAs", "Weekly Insights"],
+    link: "/portfolio/socialdots/ai-business-hub",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "AI Voice Agent",
+    brand: "Sales & Support",
+    description: "Inbound/outbound AI voice for lead capture, booking, and triage with human handoff.",
+    tags: ["Voice", "Scheduling", "CRM", "After-hours"],
+    imageUrl: "/ai-call-center-automation.jpg",
+    results: ["Higher Booking Rate", "24/7 Coverage", "Unified Leads"],
+    link: "/portfolio/socialdots/ai-voice-agent",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "Cricket Cadets",
+    brand: "CricketCadets.ca",
+    description: "Website + AI concierge for a cricket coaching academy: bookings and parent FAQs.",
+    tags: ["Web", "AI Concierge", "Scheduling", "Airtable"],
+    imageUrl: "/web-development-ai.jpg",
+    results: ["More Trial Sign-ups", "Faster Responses", "Reduced Admin"],
+    link: "/portfolio/socialdots/cricket-cadets",
+    featured: false
+  }
+];
 
   const featuredProjects = portfolioItems.filter(item => item.featured);
   const allProjects = portfolioItems;

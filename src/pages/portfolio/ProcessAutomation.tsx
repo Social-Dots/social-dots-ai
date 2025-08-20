@@ -79,17 +79,34 @@ export default function ProcessAutomation() {
             Back to Home
           </Link>
           
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Business Process Automation
-            </h1>
-            <p className="text-xl text-white/90 mb-6">
-              Comprehensive workflow automation including document processing, client onboarding, and reporting that saved 20 hours per week of manual work
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Process Automation</span>
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Workflow Optimization</span>
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Document Processing</span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Business Process Automation
+              </h1>
+              <p className="text-xl text-white/90 mb-6">
+                Comprehensive workflow automation including document processing, client onboarding, and reporting that saved 20 hours per week of manual work
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Process Automation</span>
+                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Workflow Optimization</span>
+                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Document Processing</span>
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 h-96">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-sm font-medium">Live Preview</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-xs">socialdots.ai</span>
+                </div>
+              </div>
+              <iframe 
+                src="https://socialdots.ai" 
+                className="w-full h-full rounded-lg bg-white"
+                title="Social Dots Process Automation"
+              />
             </div>
           </div>
         </div>

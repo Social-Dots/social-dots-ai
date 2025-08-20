@@ -57,16 +57,16 @@ const App = () => {
             <Route path="/projects/workwear" element={<WorkwearProject />} />
             <Route path="/projects/hockey" element={<HockeyProject />} />
             <Route path="/projects/pet-tracker" element={<PetProject />} />
-            <Route path="/portfolio/ai-customer-service" element={<AICustomerService />} />
-            <Route path="/portfolio/ecommerce-growth" element={<EcommerceGrowth />} />
-            <Route path="/portfolio/social-media-automation" element={<SocialMediaAutomation />} />
-            <Route path="/portfolio/lead-generation" element={<LeadGeneration />} />
-            <Route path="/portfolio/process-automation" element={<ProcessAutomation />} />
-            <Route path="/portfolio/ai-thumbnail-generator" element={<AIThumbnailGenerator />} />
-            <Route path="/portfolio/ai-fake-listing-tester" element={<AIFakeListingTester />} />
-            <Route path="/portfolio/ai-business-hub" element={<AIBusinessHub />} />
-            <Route path="/portfolio/cricket-cadets" element={<CricketCadets />} />
-            <Route path="/portfolio/ai-voice-agent" element={<AIVoiceAgent />} />
+            <Route path="/portfolio/socialdots/ai-customer-service" element={<AICustomerService />} />
+            <Route path="/portfolio/socialdots/ecommerce-growth" element={<EcommerceGrowth />} />
+            <Route path="/portfolio/socialdots/social-media-automation" element={<SocialMediaAutomation />} />
+            <Route path="/portfolio/socialdots/lead-generation" element={<LeadGeneration />} />
+            <Route path="/portfolio/socialdots/process-automation" element={<ProcessAutomation />} />
+            <Route path="/portfolio/socialdots/ai-thumbnail-generator" element={<AIThumbnailGenerator />} />
+            <Route path="/portfolio/socialdots/ai-fake-listing-tester" element={<AIFakeListingTester />} />
+            <Route path="/portfolio/socialdots/ai-business-hub" element={<AIBusinessHub />} />
+            <Route path="/portfolio/socialdots/cricket-cadets" element={<CricketCadets />} />
+            <Route path="/portfolio/socialdots/ai-voice-agent" element={<AIVoiceAgent />} />
             <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/development-process" element={<DevelopmentProcess />} />
             <Route path="/services/ai-concierge" element={<AIConcierge />} />

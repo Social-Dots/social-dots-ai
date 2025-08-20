@@ -51,39 +51,57 @@ const AICustomerService = () => {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] bg-gradient-to-br from-social-dots-blue to-social-dots-blue-light text-white overflow-hidden">
+      <section className="relative min-h-[80vh] bg-gradient-to-br from-social-dots-blue to-social-dots-blue-light text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Badge className="mb-6 bg-white/20 text-white border-white/30">
-              Featured Case Study
-            </Badge>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-4xl"
+            >
+              <Badge className="mb-6 bg-white/20 text-white border-white/30">
+                Featured Case Study
+              </Badge>
+              
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                AI Customer Service 
+                <span className="block text-social-dots-orange">Automation</span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl mb-8 text-blue-100">
+                How a Canadian restaurant chain reduced call center costs by 60% while improving customer satisfaction 
+                with AI-powered customer service automation.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-social-dots-orange hover:bg-social-dots-orange/90 text-white">
+                  Get Similar Results
+                  <ArrowRight className="ml-2" />
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  Download Case Study
+                </Button>
+              </div>
+            </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              AI Customer Service 
-              <span className="block text-social-dots-orange">Automation</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              How a Canadian restaurant chain reduced call center costs by 60% while improving customer satisfaction 
-              with AI-powered customer service automation.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-social-dots-orange hover:bg-social-dots-orange/90 text-white">
-                Get Similar Results
-                <ArrowRight className="ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Download Case Study
-              </Button>
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+            >
+              <iframe
+                src="https://socialdots.ai"
+                className="w-full h-full border-0"
+                title="Live Preview - AI Customer Service"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

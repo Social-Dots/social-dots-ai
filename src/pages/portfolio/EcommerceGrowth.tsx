@@ -41,32 +41,49 @@ export default function EcommerceGrowth() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="bg-gradient-to-br from-blue-600 to-purple-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <Link 
-            to="/" 
-            className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Link>
-          
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              E-commerce Growth Platform
-            </h1>
-            <p className="text-xl text-white/90 mb-6">
-              Complete digital transformation for a local retail business that resulted in 300% increase in online sales
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">E-commerce</span>
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Digital Transformation</span>
-              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Marketing Automation</span>
+      {/* Hero Section */}
+      <section className="relative min-h-[80vh] bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="max-w-4xl">
+              <Link 
+                to="/" 
+                className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Home
+              </Link>
+              
+              <div className="text-white">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  E-commerce Growth Platform
+                </h1>
+                <p className="text-xl text-white/90 mb-6">
+                  Complete digital transformation for a local retail business that resulted in 300% increase in online sales
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white/20 rounded-full text-sm">E-commerce</span>
+                  <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Digital Transformation</span>
+                  <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Marketing Automation</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+              <iframe
+                src="https://socialdots.ai"
+                className="w-full h-full border-0"
+                title="Live Preview - E-commerce Growth Platform"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Metrics */}
       <div className="bg-gray-50 py-16">
